@@ -44,13 +44,13 @@ const Footer = ({ row, col, colOne, colTwo }) => {
               <Image src={LogoImage} alt="Charity" />
             </Link>
 
-            <Text className="text" content="AU: +046 1456 5924" />
+            <Text className="text" content="" />
             <a
               aria-label="go to mail"
-              href="mailto:hello@ronascrubs.com"
+              href="mailto:info@ronascrubs.com"
               className="mail"
             >
-              hello@ronascrubs.com
+              info@ronascrubs.com
             </a>
            
           </Box>

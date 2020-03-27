@@ -4,11 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import { charityTheme } from 'common/src/theme/charity';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/Charity/Navbar';
-import BannerSection from '../containers/Charity/BannerSection';
-import WorkSection from '../containers/Charity/WorkSection';
-import HumanityBlock from '../containers/Charity/HumanityBlock';
-import PromotionBlock from '../containers/Charity/PromotionBlock';
-import ClientBlock from '../containers/Charity/ClientBlock';
+import MilestoneBlock from '../containers/Charity/MilestoneBlock';
+import FundraiserSection from '../containers/Charity/FundraiserSection';
 import Footer from '../containers/Charity/Footer';
 import {
   GlobalStyle,
@@ -30,11 +27,8 @@ export default () => {
             <Navbar />
           </Sticky>
           <ContentWrapper>
-            <BannerSection />
-            <WorkSection />
-            <HumanityBlock />
-            <PromotionBlock />
-            <ClientBlock />
+          <FundraiserSection />
+          <MilestoneBlock />
           </ContentWrapper>
           <Footer />
         </CharityWrapper>

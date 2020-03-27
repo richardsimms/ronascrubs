@@ -39,15 +39,15 @@
   "bannerSlides": [
     {
       "id": 1,
-      "thumb_url": "../../assets/image/charity/banner/slide1.png"
+      "thumb_url": "../../assets/image/charity/banner/slide1.jpg"
     },
     {
       "id": 2,
-      "thumb_url": "../../assets/image/charity/banner/slide2.png"
+      "thumb_url": "../../assets/image/charity/banner/slide2.jpg"
     },
     {
       "id": 3,
-      "thumb_url": "../../assets/image/charity/banner/slide3.png"
+      "thumb_url": "../../assets/image/charity/banner/slide3.jpg"
     },
     {
       "id": 4,
@@ -159,7 +159,7 @@
     }
   ],
   "workData": {
-    "title": "How We Works",
+    "title": "How we work",
     "slogan": "Water is a non-profit organization bringing clean and safe drinking water to people in developing countries",
     "features": [
       {
@@ -386,7 +386,7 @@
         {
           "id": 6,
           "text": "About",
-          "link": "#1"
+          "link": "/about"
         }
       ]
     }
