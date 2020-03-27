@@ -61,25 +61,25 @@
       {
         "id": 1,
         "icon": "../../assets/image/charity/feature/1.svg",
-        "title": "Sponsor A Water",
+        "title": "Washing bulk fabric",
         "description": "If you want to change the world, one wish at a time, help kids"
       },
       {
         "id": 2,
         "icon": "../../assets/image/charity/feature/2.svg",
-        "title": "Pledge For A Cause",
+        "title": "Cutting patterns",
         "description": "If you want to change the world, one wish at a time."
       },
       {
         "id": 3,
         "icon": "../../assets/image/charity/feature/3.svg",
-        "title": "Buy a Coffee",
+        "title": "Sewing scrubs",
         "description": "If you want to change the world, one wish at a time."
       },
       {
         "id": 4,
         "icon": "../../assets/image/charity/feature/4.svg",
-        "title": "Volunteer With Us",
+        "title": "Distribute materials",
         "description": "If you want to change the world, one wish at a time, help kids"
       },
       {
@@ -91,7 +91,7 @@
       {
         "id": 6,
         "icon": "../../assets/image/charity/feature/6.svg",
-        "title": "Help us for Educational ",
+        "title": "Donate ",
         "description": "If you want to change the world, one wish at a time."
       }
     ]
@@ -165,20 +165,20 @@
       {
         "id": 1,
         "icon": "../../assets/image/charity/map-pin.svg",
-        "title": "We prove every project",
-        "description": "We track every dollar you raise, and show the projects you helped fund with photos."
+        "title": "Sew Scrubs",
+        "description": "Become one of our Angels and make scrubs for our healthcare Heroes"
       },
       {
         "id": 2,
         "icon": "../../assets/image/charity/search-icon.svg",
-        "title": "We’re an open book",
-        "description": "We’ve consistently received the highest grades available for accountability."
+        "title": "Get Scrubs",
+        "description": "Sign up to receive scrubs from our Angels, all healthcare workers are welcome to order"
       },
       {
         "id": 3,
         "icon": "../../assets/image/charity/icon-100p.svg",
-        "title": "100% goes to the field",
-        "description": "Private donors cover our operating costs so 100% of your money can fund water projects."
+        "title": "Support Us",
+        "description": "You can support us in all sorts of ways. Donations are very welcome, to help us get scrubs from our Angels to our Heroes. You can also help us by partnering with us. "
       }
     ]
   },
@@ -211,41 +211,41 @@
   },
   "humanityData": {
     "image": "../../assets/image/charity/humanity-glob.png",
-    "slogan": "ONLINE SOCIAL FUNDRAISING",
-    "title": "We need your help to promotr humanity",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    "slogan": "DO YOU NEED SCRUBS?",
+    "title": "How to order scrubs",
+    "text": "Rona Scrubs is here to help. We have volunteer Angels ready to make you your own set of scrubs and have them delivered to your door. ",
     "lists": [
       {
         "id": 1,
-        "text": "Let them drink pure"
+        "text": "Let us know how many sets of scrubs you need (we recommend 1-2 sets per Hero, so we can spread the love to as many people as possible)"
       },
       {
         "id": 2,
-        "text": "Ensure them medicare"
+        "text": "Choose your size"
       },
       {
         "id": 3,
-        "text": "create opportunity of education"
+        "text": "We deliver to you"
       }
     ]
   },
   "promotionData": {
-    "slogan": "GET YOUR COMMUNITY ON BOARD",
-    "title": "We are creating a world with basic safety for all.",
-    "text1": "We exist to permanently end violent conict and exploitation facing our world's most isolated and unprotected communities.",
-    "text2": "We partner with local visionaries in volatile conict zones to build community-run initiatives and drive global policy change to end violent conict, save lives, and give communities the safety they deserve.",
+    "slogan": "SEW FOR OUR HEALTHCARE HEROES",
+    "title": "We need your help to make scrubs",
+    "text1": "Do you have some sewing experience? Are you willing to wash and cut fabric? Are you keen to help our healthcare workers on the frontline of the COVID-19 pandemic? ",
+    "text2": "If your answer is yes to any of these questions, then we need you! Become a Rona Scrubs Angel today",
     "lists": [
       {
         "id": 1,
-        "text": "Let them drink pure"
+        "text": "Let us know what you need"
       },
       {
         "id": 2,
-        "text": "Ensure them medicare"
+        "text": "Choose your size"
       },
       {
         "id": 3,
-        "text": "create opportunity of education"
+        "text": "We deliver to you"
       }
     ],
     "image": "../../assets/image/charity/promotion.svg"
@@ -303,31 +303,31 @@
     {
       "id": 1,
       "logo": "../../assets/image/charity/clients/1.png",
-      "name": "windows",
+      "name": "Spotlight",
       "link": "#1"
     },
     {
       "id": 2,
       "logo": "../../assets/image/charity/clients/2.png",
-      "name": "airbnb",
+      "name": "Acendre",
       "link": "#2"
     },
     {
       "id": 3,
       "logo": "../../assets/image/charity/clients/3.png",
-      "name": "adidas",
+      "name": "RK",
       "link": "#3"
     },
     {
       "id": 4,
       "logo": "../../assets/image/charity/clients/4.png",
-      "name": "ibm",
+      "name": "Xero",
       "link": "#4"
     },
     {
       "id": 5,
       "logo": "../../assets/image/charity/clients/5.png",
-      "name": "amazon",
+      "name": "Moore Stephens",
       "link": "#5"
     },
     {
@@ -344,7 +344,7 @@
       "menu": [
         {
           "id": 1,
-          "text": "Medical",
+          "text": "Test",
           "link": "#1"
         },
         {

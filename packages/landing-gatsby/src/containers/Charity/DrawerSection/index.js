@@ -57,10 +57,6 @@ const DrawerSection = () => {
             <li />
             <li />
             <li />
-            <li />
-            <li />
-            <li />
-            <li />
           </ul>
           <i className="flaticon-plus-symbol " />
         </button>

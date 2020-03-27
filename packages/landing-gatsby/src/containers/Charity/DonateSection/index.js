@@ -66,20 +66,10 @@ const DonateSection = ({ row, col }) => {
           <Box className="col" {...col}>
             <ContentArea>
               <Heading>
-                Would You like to <span>Help people</span> Across the Globe?
+                Would You like to <span>Help</span> our medical hero's
               </Heading>
-              <Text content="Data from January 1 through November 30, 2018" />
-              <ButtonGroup>
-                <a href="#1" className="learn__more-btn alt">
-                  <span className="hyphen" />
-                  <span className="btn_text">Funding Progress</span>
-                </a>
-                <Text content="or" />
-                <a href="#1" className="learn__more-btn">
-                  <span className="hyphen" />
-                  <span className="btn_text">Join our Organizations</span>
-                </a>
-              </ButtonGroup>
+              <Text content="Some secondary text" />
+             
             </ContentArea>
           </Box>
 

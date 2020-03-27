@@ -65,7 +65,7 @@ export const ImageSlider = styled.div`
 export const ImageSlide = styled.div`
   height: 30px;
   flex-shrink: 0;
-  animation: ${slideShow} 20s linear infinite;
+  animation: ${slideShow} 0s linear infinite;
 
   a {
     margin: 0 22px;

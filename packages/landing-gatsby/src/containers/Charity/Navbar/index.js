@@ -17,10 +17,10 @@ const Navbar = () => {
         </Link>
         <MenuWrapper>
           <AnchorLink className="smooth_scroll" href="#donate" offset={81}>
-            Help us help them
+            Donate
           </AnchorLink>
           <Button>
-            <span className="text">SPREAD</span>
+            <span className="text">SHARE</span>
             <Image src={heartImage} alt="Charity Landing" />
           </Button>
         </MenuWrapper>

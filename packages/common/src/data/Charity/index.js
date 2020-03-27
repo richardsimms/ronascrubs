@@ -26,19 +26,9 @@ export const menuItems = [
     offset: '81',
   },
   {
-    label: 'Our Branch',
-    path: '#branch',
+    label: 'socialFundraising',
+    path: '#socialFundraising',
     offset: '100',
-  },
-  {
-    label: 'How We Works',
-    path: '#work',
-    offset: '81',
-  },
-  {
-    label: 'Our Milestone',
-    path: '#milestone',
-    offset: '81',
   },
   {
     label: 'Donate Us',
@@ -46,13 +36,13 @@ export const menuItems = [
     offset: '81',
   },
   {
-    label: 'Fundraisers',
-    path: '#fundraisers',
+    label: 'ourCommunity',
+    path: '#ourCommunity',
     offset: '81',
   },
   {
-    label: 'Our Blog',
-    path: '#blog',
+    label: 'How We Works',
+    path: '#work',
     offset: '81',
   },
 ];
@@ -309,22 +299,22 @@ import humanityGlob from 'common/src/assets/image/charity/humanity-glob.png';
 
 export const humanityData = {
   image: humanityGlob,
-  slogan: 'ONLINE SOCIAL FUNDRAISING',
-  title: 'We need your help to promotr humanity',
+  slogan: 'DO YOU NEED SCRUBS?',
+  title: 'How to order scrubs',
   text:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.',
+    'Rona Scrubs is here to help. We have volunteer Angels ready to make you your own set of scrubs and have them delivered to your door. How does it work?',
   lists: [
     {
       id: 1,
-      text: 'Let them drink pure',
+      text: 'Let us know how many sets of scrubs you need (we recommend 1-2 sets per Hero, so we can spread the love to as many people as possible)',
     },
     {
       id: 2,
-      text: 'Ensure them medicare',
+      text: 'Choose your size',
     },
     {
       id: 3,
-      text: 'create opportunity of education',
+      text: 'We deliver to you',
     },
   ],
 };
@@ -429,7 +419,6 @@ import airbnb from 'common/src/assets/image/charity/clients/2.png';
 import adidas from 'common/src/assets/image/charity/clients/3.png';
 import ibm from 'common/src/assets/image/charity/clients/4.png';
 import amazon from 'common/src/assets/image/charity/clients/5.png';
-import google from 'common/src/assets/image/charity/clients/6.png';
 
 export const clients = [
   {
@@ -461,12 +450,6 @@ export const clients = [
     logo: amazon,
     name: 'amazon',
     link: '#5',
-  },
-  {
-    id: 6,
-    logo: google,
-    name: 'google',
-    link: '#6',
   },
 ];
 

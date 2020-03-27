@@ -33,17 +33,13 @@ export default () => {
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <Navbar />
           </Sticky>
-          <DrawerProvider>
-            <DrawerSection />
-          </DrawerProvider>
           <ContentWrapper>
             <BannerSection />
-            <FeatureSection />
+            <WorkSection />
             <HumanityBlock />
             <PromotionBlock />
-            <DonateSection />
-            <WorkSection />
             <ClientBlock />
+            <DonateSection />
           </ContentWrapper>
           <Footer />
         </CharityWrapper>

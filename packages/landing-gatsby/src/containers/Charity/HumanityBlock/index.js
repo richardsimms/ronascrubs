@@ -55,9 +55,9 @@ const HumanityBlock = ({ row, col }) => {
                 ))}
               </List>
 
-              <a className="learn__more-btn" href="#1">
+              <a className="learn__more-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeMwXpFarvbn0kNnKXjbyi71mvnz_ybJgpbwPWG_cd4c_qiww/viewform">
                 <span className="hyphen" />
-                <span className="btn_text">Learn More </span>
+                <span className="btn_text">Become a Rona Scrubs Angel</span>
               </a>
             </ContentWrapper>
           </Box>

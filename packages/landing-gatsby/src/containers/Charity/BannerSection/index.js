@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import { Icon } from 'react-icons-kit';
-import { chevronRight } from 'react-icons-kit/feather/chevronRight';
 import Image from 'gatsby-image';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
@@ -45,26 +43,22 @@ const BannerSection = () => {
       <ContentWrapper>
         <TextArea>
           <HighlightedText className="highlighted_text">
-            <strong>NEWS</strong> 1 year. 100 Forever Families.
-            <Icon icon={chevronRight} />
+            <strong>HELP</strong> sew scrubs for our heroes medics 
           </HighlightedText>
           <Heading
-            content="Bring a smile to
-          Their faces."
+            content="Scrubs made with TLC"
           />
           <Heading
             as="h4"
-            content="A new way of giving back to 
-            your loved charities."
+            content="Rona Scrubs is a not for profit organisation creating scrubs for our healthcare staff"
           />
           <Text
-            content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          "
+            content="Our mission is to provide a new way of giving back to our medical heroes, and the wider community, during the COVID-19 pandemic."
           />
-          <Link className="learn__more-btn" to="/charity">
+          <a className="learn__more-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc8qIX3uxn4xe-51B6QajcOziCZPiJMZJb14JZPCxnCbTXmDw/viewform">
             <span className="hyphen" />
-            <span className="btn_text">Become a Hero</span>         
-          </Link>
+            <span className="btn_text">Order your scrubs </span>         
+          </a>
         </TextArea>
         <ImageArea>
           <GlideCarousel
