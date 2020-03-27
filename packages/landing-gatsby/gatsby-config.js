@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Rona Scrubs`,
-    description: `Rona Scrubs is a not for profit organisation creating scrubs for our healthcare staff`,
+    title: `A react next landing page`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
