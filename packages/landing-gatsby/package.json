@@ -3,7 +3,7 @@
   "private": true,
   "description": "Rona Scrubs is a not for profit organisation creating scrubs for our healthcare staff",
   "version": "4.0.0",
-  "author": "RedQ Team",
+  "author": "Rona Scrubs Team",
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "@redq/reuse-modal": "^1.1.9",
