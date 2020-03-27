@@ -304,134 +304,83 @@
       "id": 1,
       "logo": "../../assets/image/charity/clients/1.png",
       "name": "Spotlight",
-      "link": "#1"
+      "link": "https://www.spotlightstores.com"
     },
     {
       "id": 2,
       "logo": "../../assets/image/charity/clients/2.png",
       "name": "Acendre",
-      "link": "#2"
+      "link": "https://www.acendre.com"
     },
     {
       "id": 3,
       "logo": "../../assets/image/charity/clients/3.png",
-      "name": "RK",
-      "link": "#3"
+      "name": "Russell Kennedy",
+      "link": "https://www.russellkennedy.com.au"
     },
     {
       "id": 4,
       "logo": "../../assets/image/charity/clients/4.png",
       "name": "Xero",
-      "link": "#4"
+      "link": "https://www.xero.com/au/"
     },
     {
       "id": 5,
       "logo": "../../assets/image/charity/clients/5.png",
       "name": "Moore Stephens",
       "link": "#5"
-    },
-    {
-      "id": 6,
-      "logo": "../../assets/image/charity/clients/6.png",
-      "name": "google",
-      "link": "#6"
     }
   ],
   "menuWidgets": [
     {
       "id": 1,
-      "title": "FUNDRAISE FOR",
+      "title": "PARTNERS",
       "menu": [
         {
           "id": 1,
-          "text": "Test",
-          "link": "#1"
+          "text": "Spotlight",
+          "link": "https://www.spotlightstores.com"
         },
         {
           "id": 2,
-          "text": "Emergency",
-          "link": "#1"
+          "text": "Acendre",
+          "link": "https://www.acendre.com"
         },
         {
           "id": 3,
-          "text": "Memorial",
-          "link": "#1"
+          "text": "Russell Kennedy Lawyers",
+          "link": "https://www.russellkennedy.com.au"
         },
         {
           "id": 4,
-          "text": "Education",
-          "link": "#1"
+          "text": "Xero",
+          "link": "https://www.xero.com/au/"
         },
         {
           "id": 5,
-          "text": "Charity",
-          "link": "#1"
-        },
-        {
-          "id": 6,
-          "text": "Nonprofit organization",
+          "text": "Moore Stephens",
           "link": "#1"
         }
       ]
     },
-    {
-      "id": 2,
-      "title": "LEARN MORE",
-      "menu": [
-        {
-          "id": 1,
-          "text": "How invisiblechildren works",
-          "link": "#1"
-        },
-        {
-          "id": 2,
-          "text": "Pricing and Fees",
-          "link": "#1"
-        },
-        {
-          "id": 3,
-          "text": "Common questions",
-          "link": "#1"
-        },
-        {
-          "id": 4,
-          "text": "Success stories",
-          "link": "#1"
-        },
-        {
-          "id": 5,
-          "text": "Supported countries",
-          "link": "#1"
-        }
-      ]
-    },
+
     {
       "id": 3,
       "title": "RESOURCES",
       "menu": [
         {
           "id": 1,
-          "text": "Help center",
+          "text": "Login",
           "link": "#1"
         },
         {
           "id": 2,
-          "text": "Blog",
+          "text": "Privacy Policy",
           "link": "#1"
         },
         {
           "id": 3,
-          "text": "GoFundMe Stories",
-          "link": "#1"
-        },
-        {
-          "id": 4,
-          "text": "Press center",
-          "link": "#1"
-        },
-        {
-          "id": 5,
-          "text": "Careers",
+          "text": "Terms and Conditions",
           "link": "#1"
         },
         {

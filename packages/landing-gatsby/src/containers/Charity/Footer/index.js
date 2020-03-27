@@ -90,7 +90,7 @@ const Footer = ({ row, col, colOne, colTwo }) => {
           <SocialList>
             <li className="facebook">
               <a
-                href="https://www.facebook.com/redqinc/"
+                href="https://www.facebook.com/groups/865861777227284/"
                 aria-label="social share link"
               >
                 <Icon icon={facebook} />
