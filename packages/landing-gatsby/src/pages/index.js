@@ -21,7 +21,7 @@ export default () => {
   return (
     <ThemeProvider theme={charityTheme}>
       <Fragment>
-        <SEO title="Charity" />
+        <SEO title="Rona Scrubs" />
         <ResetCSS />
         <GlobalStyle />
         {/* Start charity wrapper section */}
