@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-landing",
+  "name": "Rona Scrubs",
   "private": true,
-  "description": "React Next Landing with Gatsby Static site generator.",
+  "description": "Rona Scrubs is a not for profit organisation creating scrubs for our healthcare staff",
   "version": "4.0.0",
   "author": "RedQ Team",
   "dependencies": {
