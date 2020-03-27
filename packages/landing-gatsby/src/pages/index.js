@@ -8,7 +8,7 @@ import BannerSection from '../containers/Charity/BannerSection';
 import WorkSection from '../containers/Charity/WorkSection';
 import HumanityBlock from '../containers/Charity/HumanityBlock';
 import PromotionBlock from '../containers/Charity/PromotionBlock';
-import ClientBlock from '../containers/Charity/ClientBlock';
+
 import Footer from '../containers/Charity/Footer';
 import {
   GlobalStyle,
@@ -34,7 +34,7 @@ export default () => {
             <WorkSection />
             <HumanityBlock />
             <PromotionBlock />
-            <ClientBlock />
+            
           </ContentWrapper>
           <Footer />
         </CharityWrapper>
