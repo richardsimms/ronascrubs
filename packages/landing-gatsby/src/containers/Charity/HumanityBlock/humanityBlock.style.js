@@ -49,7 +49,7 @@ export const ContentWrapper = styled.div`
     line-height: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    color: ${themeGet('colors.secondary2', '#EE2541')};
+    color: ${themeGet('colors.secondary2', '#1B4FF1')};
     margin-bottom: 30px;
     @media only screen and (max-width: 1440px) {
       margin-bottom: 27px;
