@@ -236,7 +236,7 @@ import icon1p from 'common/src/assets/image/charity/icon-100p.svg';
 export const workData = {
   title: 'How We Works',
   slogan:
-    'Water is a non-profit organization bringing clean and safe drinking water to people in developing countries',
+    '',
   features: [
     {
       id: 1,

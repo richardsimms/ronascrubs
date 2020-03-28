@@ -17,12 +17,9 @@ const Navbar = () => {
         </Link>
         <MenuWrapper>
           <AnchorLink className="smooth_scroll" href="#donate" offset={81}>
-          Support Us
+          
           </AnchorLink>
-          <Button>
-            <span className="text">SHARE</span>
-            <Image src={heartImage} alt="Charity Landing" />
-          </Button>
+       
         </MenuWrapper>
       </Container>
     </NavbarWrapper>

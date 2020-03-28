@@ -159,8 +159,8 @@
     }
   ],
   "workData": {
-    "title": "How we work",
-    "slogan": "Water is a non-profit organization bringing clean and safe drinking water to people in developing countries",
+    "title": "How it works",
+    "slogan": "",
     "features": [
       {
         "id": 1,
@@ -350,16 +350,6 @@
           "id": 3,
           "text": "Russell Kennedy Lawyers",
           "link": "https://www.russellkennedy.com.au"
-        },
-        {
-          "id": 4,
-          "text": "Xero",
-          "link": "https://www.xero.com/au/"
-        },
-        {
-          "id": 5,
-          "text": "Moore Stephens",
-          "link": "#1"
         }
       ]
     },

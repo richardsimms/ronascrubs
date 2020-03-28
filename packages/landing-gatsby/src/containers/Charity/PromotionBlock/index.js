@@ -49,8 +49,8 @@ const PromotionBlock = ({ row, col }) => {
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <ContentWrapper>
-              <Heading as="h5" content={slogan} />
-              <Heading content={title} />
+              <Heading content={slogan} />
+              <Heading as="h5" content={title} />
               <Text content={text1} />
               <Text content={text2} />
               <List>
@@ -60,7 +60,7 @@ const PromotionBlock = ({ row, col }) => {
               </List>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8qIX3uxn4xe-51B6QajcOziCZPiJMZJb14JZPCxnCbTXmDw/viewform" className="learn__more-btn">
                 <span className="hyphen" />
-                <span className="btn_text">Order your scrubs </span>
+                <span className="btn_text">Become a Rona Scrubs Angel </span>
               </a>
             </ContentWrapper>
           </Box>

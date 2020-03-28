@@ -13,7 +13,7 @@ const colors = {
   black: '#000000',
   white: '#ffffff',
   heading: '#060F1E',
-  text: '#294859',
+  text: '#060F1E',
   secondaryText: '#616970',
   lightText: 'rgba(41, 72, 89, 0.5)',
   linkedin: '#0077B5',

@@ -57,7 +57,7 @@ const BannerSection = () => {
           />
           <a className="learn__more-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc8qIX3uxn4xe-51B6QajcOziCZPiJMZJb14JZPCxnCbTXmDw/viewform">
             <span className="hyphen" />
-            <span className="btn_text">Order your scrubs </span>         
+            <span className="btn_text">Order scrubs </span>         
           </a>
         </TextArea>
         <ImageArea>

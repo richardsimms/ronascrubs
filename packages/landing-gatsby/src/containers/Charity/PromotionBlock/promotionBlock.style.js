@@ -91,7 +91,7 @@ export const ContentWrapper = styled.div`
       margin-bottom: 27px;
     }
     @media only screen and (max-width: 1360px) {
-      font-size: 15px;
+      font-size: 16px;
     }
     @media only screen and (max-width: 991px) {
       margin-bottom: 20px;
@@ -124,7 +124,7 @@ export const Item = styled.li`
   font-size: 20px;
   line-height: 40px;
   padding: 10px 0;
-  color: ${themeGet('colors.heading', '#060F1E')};
+  color: ${themeGet('colors.heading', '#294859')};
   @media only screen and (max-width: 1440px) {
     font-size: 18px;
     line-height: 30px;
@@ -134,7 +134,7 @@ export const Item = styled.li`
     line-height: 24px;
   }
   @media only screen and (max-width: 991px) {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
   }
 `;

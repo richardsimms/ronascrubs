@@ -208,7 +208,7 @@ const CharityWrapper = styled.div`
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     color: ${themeGet('colors.heading', '#060F1E')};
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0;
     height: 50px;
@@ -216,7 +216,7 @@ const CharityWrapper = styled.div`
     padding: 0 20px;
     position: relative;
     @media only screen and (max-width: 1360px) {
-      font-size: 13px;
+      font-size: 18px;
     }
 
     &::before {

@@ -60,8 +60,8 @@ export const Button = styled.button`
   border: 0;
   padding: 0;
   min-width: 150px;
-  min-height: 50px;
-  display: flex;
+  min-height: 75px;
+  display: flex;  
   align-items: center;
   justify-content: center;
   border-radius: 50px;
