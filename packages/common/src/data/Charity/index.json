@@ -362,16 +362,6 @@
           "id": 2,
           "text": "Privacy Policy",
           "link": "#1"
-        },
-        {
-          "id": 3,
-          "text": "Terms and Conditions",
-          "link": "#1"
-        },
-        {
-          "id": 6,
-          "text": "About",
-          "link": "/about"
         }
       ]
     }

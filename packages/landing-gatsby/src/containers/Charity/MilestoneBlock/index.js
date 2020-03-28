@@ -36,10 +36,6 @@ const MilestoneBlock = () => {
           <Text content={title} />
           <Heading content={amount} />
           <Text content={text} />
-          <a href="#1" className="learn__more-btn">
-            <span className="hyphen" />
-            <span className="btn_text">Meet our Donors</span>
-          </a>
         </MilestoneCard>
       </BlockWrapper>
       <CounterWrapper>

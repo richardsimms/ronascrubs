@@ -1,9 +1,9 @@
 const colors = {
   transparent: 'transparent',
   lightGray: '#F0F0F0',
-  primary: '#FCF22B',
-  primaryHover: '#ECF22F',
-  primary2: 'rgba(252, 242, 43, 0.25)',
+  primary: '#FADC84',
+  primaryHover: '#D2A92D',
+  primary2: '#ECF22F',
   secondary: '#1B4FF1',
   secondary2: '#1B4FF1',
   secondaryHover: '#FF282F',

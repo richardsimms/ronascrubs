@@ -5,6 +5,7 @@ import { charityTheme } from 'common/src/theme/charity';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/Charity/Navbar';
 import MilestoneBlock from '../containers/Charity/MilestoneBlock';
+import Spacer from '../containers/Charity/Spacer';
 import FundraiserSection from '../containers/Charity/FundraiserSection';
 import Footer from '../containers/Charity/Footer';
 import {
@@ -27,8 +28,9 @@ export default () => {
             <Navbar />
           </Sticky>
           <ContentWrapper>
+          <Spacer />
+          
           <FundraiserSection />
-          <MilestoneBlock />
           </ContentWrapper>
           <Footer />
         </CharityWrapper>

@@ -228,7 +228,7 @@ const CharityWrapper = styled.div`
       height: 100%;
       border-radius: 40px;
       width: 72px;
-      background-color: ${themeGet('colors.primary', '#FCF22B')};
+      background-color: ${themeGet('colors.primary', '#FADC84')};
       transition: all 0.3s ease-out;
     }
 
