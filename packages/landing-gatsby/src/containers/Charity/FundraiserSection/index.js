@@ -40,7 +40,7 @@ const FundraiserSection = () => {
           </TextWrapper>
         </ContentArea>
       </Container>
-      <Container padding-top="80px">
+      <Container >
          <ContentArea>
           <TextWrapper>
             <TextAndLink>

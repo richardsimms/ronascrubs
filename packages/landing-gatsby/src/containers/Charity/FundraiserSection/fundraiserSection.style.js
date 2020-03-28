@@ -59,6 +59,7 @@ export const SectionHeader = styled.header`
 
 export const ContentArea = styled.div`
   display: flex;
+  padding-bottom: 40px;
   flex-wrap: wrap;
   width: 100%;
   @media only screen and (max-width: 480px) {

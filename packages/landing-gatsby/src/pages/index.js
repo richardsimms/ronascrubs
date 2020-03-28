@@ -34,7 +34,6 @@ export default () => {
             <WorkSection />
             <HumanityBlock />
             <PromotionBlock />
-            
           </ContentWrapper>
           <Footer />
         </CharityWrapper>
