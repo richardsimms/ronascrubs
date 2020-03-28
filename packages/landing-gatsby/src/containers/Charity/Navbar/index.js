@@ -16,10 +16,9 @@ const Navbar = () => {
           <Image src={logoImage} alt="Charity React Next Landing" />
         </Link>
         <MenuWrapper>
-          <AnchorLink className="smooth_scroll" href="#donate" offset={81}>
-          
-          </AnchorLink>
-       
+          <Link className="smooth_scroll" to="/about" offset={81}>
+            About
+          </Link>
         </MenuWrapper>
       </Container>
     </NavbarWrapper>

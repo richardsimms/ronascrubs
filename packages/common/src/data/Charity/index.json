@@ -360,6 +360,11 @@
         },
         {
           "id": 2,
+          "text": "About",
+          "link": "/about"
+        },
+        {
+          "id": 2,
           "text": "Privacy Policy",
           "link": "#1"
         }

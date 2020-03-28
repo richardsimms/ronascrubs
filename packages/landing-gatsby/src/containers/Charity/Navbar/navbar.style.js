@@ -38,10 +38,10 @@ export const MenuWrapper = styled.div`
   }
 
   a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     margin-right: 46px;
-    color: ${themeGet('colors.white', '#ffffff')};
+    color: ${themeGet('colors.text', '#4E5865')};
     transition: all 0.25s ease;
     @media only screen and (max-width: 1440px) {
       margin-right: 40px;
@@ -51,7 +51,7 @@ export const MenuWrapper = styled.div`
     }
 
     &:hover {
-      color: ${themeGet('colors.primary', '#FCF22B')};
+      color: ${themeGet('colors.secondary', '#1B4FF1')};
     }
   }
 `;
