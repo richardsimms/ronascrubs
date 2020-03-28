@@ -4,7 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import { charityTheme } from 'common/src/theme/charity';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/Charity/Navbar';
-import MilestoneBlock from '../containers/Charity/MilestoneBlock';
 import Spacer from '../containers/Charity/Spacer';
 import FundraiserSection from '../containers/Charity/FundraiserSection';
 import Footer from '../containers/Charity/Footer';
@@ -19,7 +18,7 @@ export default () => {
   return (
     <ThemeProvider theme={charityTheme}>
       <Fragment>
-        <SEO title="Charity" />
+        <SEO title="About Rona Scrubs" />
         <ResetCSS />
         <GlobalStyle />
         {/* Start charity wrapper section */}
@@ -29,7 +28,6 @@ export default () => {
           </Sticky>
           <ContentWrapper>
           <Spacer />
-          
           <FundraiserSection />
           </ContentWrapper>
           <Footer />
