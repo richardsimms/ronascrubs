@@ -164,19 +164,19 @@
     "features": [
       {
         "id": 1,
-        "icon": "../../assets/image/charity/map-pin.svg",
+        "icon": "../../assets/image/charity/icons8-romance-100.png",
         "title": "Sew Scrubs",
         "description": "Become one of our Angels and make scrubs for our healthcare Heroes"
       },
       {
         "id": 2,
-        "icon": "../../assets/image/charity/search-icon.svg",
+        "icon": "../../assets/image/charity/icons8-lab-coat-100.png",
         "title": "Get Scrubs",
         "description": "Sign up to receive scrubs from our Angels, all healthcare workers are welcome to order"
       },
       {
         "id": 3,
-        "icon": "../../assets/image/charity/icon-100p.svg",
+        "icon": "../../assets/image/charity/icons8-trust-100.png",
         "title": "Support Us",
         "description": "You can support us in all sorts of ways. Donations are very welcome, to help us get scrubs from our Angels to our Heroes. You can also help us by partnering with us. "
       }
