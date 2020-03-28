@@ -92,7 +92,7 @@ export const FeatureWrapper = styled.div`
     }
 
     .thumbnail {
-      width: 60px;
+      width: 100px;
       margin-right: 29px;
       flex-shrink: 0;
       @media only screen and (max-width: 1360px) {
