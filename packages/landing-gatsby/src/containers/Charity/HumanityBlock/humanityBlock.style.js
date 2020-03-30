@@ -132,6 +132,7 @@ export const Item = styled.li`
   line-height: 28px;
   padding: 10px 0;
   list-style-type:disc;
+  margin-left: 18px;
   color: ${themeGet('colors.text', '#294859')};
   @media only screen and (max-width: 1440px) {
     font-size: 16px;
