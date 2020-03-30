@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 import NavbarWrapper, { MenuWrapper } from './navbar.style';
 import logoImage from 'common/src/assets/image/charity/logo.svg';
-// import heartImage from 'common/src/assets/image/charity/heart-red.png';
 
 const Navbar = () => {
   return (
@@ -15,12 +14,12 @@ const Navbar = () => {
           <Image src={logoImage} alt="Rona Scrubs" />
         </Link>
         <MenuWrapper>
-           <Link className="smooth-scroll" to="/#ourMission" title="Get Scrubs" offset={81}>
+        <AnchorLink className="" to="/#ourMission" title="Get Scrubs" >
             Get Scrubs
-          </Link>
-          <Link className="smooth-scroll" to="/#ourApproach"  title="Sew Scrubs" offset={80}>
+          </AnchorLink>
+        <AnchorLink className="" to="/#ourApproach"  title="Sew Scrubs" >
           Sew Scrubs
-          </Link>
+          </AnchorLink>
           <Link  to="/about"  title="About Rona Scrubs">
             About
           </Link>

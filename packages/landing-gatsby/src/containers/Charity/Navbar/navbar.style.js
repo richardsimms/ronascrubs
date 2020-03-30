@@ -35,7 +35,8 @@ export const MenuWrapper = styled.div`
   }
   @media only screen and (max-width: 991px) {
     padding-right: 0;
-    padding-left: 10px;
+    padding-left: 16px;
+    line-height: 1rem;
   }
 
   a {
@@ -50,7 +51,10 @@ export const MenuWrapper = styled.div`
     @media only screen and (max-width: 1360px) {
       margin-right: 30px;
     }
-
+    @media only screen and (max-width: 991px) {
+    font-size: 16px;
+    margin-right: 16px;
+    }
     &:hover {
       color: ${themeGet('colors.secondary', '#1B4FF1')};
     }
