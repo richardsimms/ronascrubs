@@ -25,6 +25,7 @@ const PromotionBlock = ({ row, col }) => {
           title
           text1
           text2
+          text3
           lists {
             id
             text
@@ -39,12 +40,13 @@ const PromotionBlock = ({ row, col }) => {
     title,
     text1,
     text2,
+    text3,
     lists,
     image,
   } = data.charityJson.promotionData;
 
   return (
-    <BlockWrapper id="ourCommunity">
+    <BlockWrapper id="ourApproach">
       <Container width="1260px">
         <Box className="row" {...row}>
           <Box className="col" {...col}>
@@ -53,6 +55,7 @@ const PromotionBlock = ({ row, col }) => {
               <Heading as="h5" content={title} />
               <Text content={text1} />
               <Text content={text2} />
+              <Text content={text3} />
               <List>
                 {lists.map(item => (
                   <Item key={`list_key${item.id}`}>{item.text}</Item>

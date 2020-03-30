@@ -13,7 +13,6 @@ import FooterWrapper, {
   ListItem,
   CopyrightText,
   SocialList,
-  SelectWrapper,
 } from './footer.style';
 
 import LogoImage from 'common/src/assets/image/charity/logo.svg';

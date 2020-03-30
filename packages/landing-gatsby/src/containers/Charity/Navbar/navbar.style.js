@@ -34,7 +34,8 @@ export const MenuWrapper = styled.div`
     padding-right: calc(75px + 30px);
   }
   @media only screen and (max-width: 991px) {
-    display: none;
+    padding-right: 0;
+    padding-left: 10px;
   }
 
   a {

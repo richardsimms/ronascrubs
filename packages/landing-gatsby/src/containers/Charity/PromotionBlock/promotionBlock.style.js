@@ -37,8 +37,8 @@ export const ContentWrapper = styled.div`
   }
 
   h5 {
-    font-size: 16px;
-    line-height: 14px;
+    font-size: 24px;
+    line-height: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: ${themeGet('colors.secondary2', '#1B4FF1')};
@@ -47,12 +47,12 @@ export const ContentWrapper = styled.div`
       margin-bottom: 27px;
     }
     @media only screen and (max-width: 1360px) {
-      font-size: 14px;
-      margin-bottom: 20px;
+      font-size: 18px;
+      margin-bottom: 18px;
     }
     @media only screen and (max-width: 991px) {
-      font-size: 13px;
-      margin-bottom: 15px;
+      font-size: 16px;
+      margin-bottom: 16px;
     }
   }
 
@@ -84,17 +84,16 @@ export const ContentWrapper = styled.div`
   p {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 29px;
+    margin-bottom: 18px;
     color: ${themeGet('colors.text', '#294859')};
     @media only screen and (max-width: 1440px) {
       font-size: 16px;
-      margin-bottom: 27px;
+      margin-bottom: 16px;
     }
     @media only screen and (max-width: 1360px) {
       font-size: 16px;
     }
     @media only screen and (max-width: 991px) {
-      margin-bottom: 20px;
     }
   }
 
@@ -121,21 +120,21 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 28px;
   padding: 10px 0;
-  color: ${themeGet('colors.heading', '#294859')};
+  list-style-type:disc;
+  color: ${themeGet('colors.text', '#294859')};
   @media only screen and (max-width: 1440px) {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 27px;
   }
   @media only screen and (max-width: 1360px) {
     font-size: 16px;
     line-height: 24px;
   }
   @media only screen and (max-width: 991px) {
-    font-size: 16px;
-    line-height: 20px;
+
   }
 `;
 

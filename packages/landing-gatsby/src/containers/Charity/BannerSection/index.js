@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
@@ -43,7 +43,7 @@ const BannerSection = () => {
       <ContentWrapper>
         <TextArea>
           <HighlightedText className="highlighted_text">
-            <strong>HELP</strong> sew scrubs for our heroes medics 
+            <strong>HELP</strong> sew scrubs for our healthcare heroes 
           </HighlightedText>
           <Heading
             content="Scrubs made with TLC"

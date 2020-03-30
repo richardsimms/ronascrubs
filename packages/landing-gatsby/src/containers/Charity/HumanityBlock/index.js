@@ -36,7 +36,7 @@ const HumanityBlock = ({ row, col }) => {
   const { slogan, title, text, lists, image } = data.charityJson.humanityData;
 
   return (
-    <BlockWrapper id="socialFundraising">
+    <BlockWrapper id="ourMission">
       <Container width="1260px">
         <Box className="row" {...row}>
           <Box className="col" {...col}>

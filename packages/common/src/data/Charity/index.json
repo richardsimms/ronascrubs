@@ -1,13 +1,13 @@
 {
   "menuItems": [
     {
-      "label": "Feature",
-      "path": "#feature",
+      "label": "Rona Scrubs",
+      "path": "/",
       "offset": "81"
     },
     {
-      "label": "Our Branch",
-      "path": "#branch",
+      "label": "About",
+      "path": "/about",
       "offset": "100"
     },
     {
@@ -213,7 +213,7 @@
     "image": "../../assets/image/charity/humanity-glob.png",
     "slogan": "DO YOU NEED SCRUBS?",
     "title": "How to order scrubs",
-    "text": "Rona Scrubs is here to help. We have volunteer Angels ready to make you your own set of scrubs and have them delivered to your door. ",
+    "text": "Rona Scrubs is here to help. We have volunteer Angels ready to make you your own set of scrubs and have them delivered to you. ",
     "lists": [
       {
         "id": 1,
@@ -234,18 +234,19 @@
     "title": "We need your help to make scrubs",
     "text1": "Do you have some sewing experience? Are you willing to wash and cut fabric? Are you keen to help our healthcare workers on the frontline of the COVID-19 pandemic? ",
     "text2": "If your answer is yes to any of these questions, then we need you! Become a Rona Scrubs Angel today",
+    "text3": "What’s involved?",
     "lists": [
       {
         "id": 1,
-        "text": "Let us know what you need"
+        "text": "We send you the fabric and patterns"
       },
       {
         "id": 2,
-        "text": "Choose your size"
+        "text": "You wash, cut and/or sew the scrubs"
       },
       {
         "id": 3,
-        "text": "We deliver to you"
+        "text": "We collect and deliver to the Heroes"
       }
     ],
     "image": "../../assets/image/charity/promotion.svg"
@@ -334,7 +335,7 @@
   "menuWidgets": [
     {
       "id": 1,
-      "title": "PARTNERS",
+      "title": "SUPPORTERS",
       "menu": [
         {
           "id": 1,

@@ -176,7 +176,7 @@ export const TextArea = styled.div`
 export const HighlightedText = styled.p`
   display: flex;
   align-items: center;
-  max-width: 320px;
+  max-width: 338px;
   width: 100%;
   min-height: 28px;
   border-radius: 80px;
