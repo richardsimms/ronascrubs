@@ -34,7 +34,24 @@ const sizeOptions = [
 ];
 
 const handleSubmit = e => {
-  console.log('submit clicked');
+  e.preventDefault();
+  const data = new FormData(e.target);
+  const json = JSON.stringify(Object.fromEntries(data));
+  fetch('http://localhost:3000/API/Users/HeroSignUp', {
+    method: 'POST', // or 'PUT'
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: json,
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  // console.log(json);
 };
 
 const HeroFormSection = () => {
@@ -47,20 +64,44 @@ const HeroFormSection = () => {
         </SectionHeader>
         <ContentArea>
           <form onSubmit={handleSubmit} method="post">
-            <Input inputType="text" label="First Name"></Input>
-            <Input inputType="text" label="Last Name"></Input>
-            <Input inputType="text" label="Email"></Input>
-            <Input inputType="text" label="Place of employment"></Input>
-            <Select options={roleOptions} labelText="Current Role" />
-            <Select options={sizeOptions} labelText="Scrub top size" />
-            <Select options={sizeOptions} labelText="Scrub bottom size" />
-            <Select options={sizeOptions} labelText="Scrub length?" />
+            <Input inputType="text" name="FirstName" label="First Name"></Input>
+            <Input inputType="text" name="LastName" label="Last Name"></Input>
+            <Input inputType="text" name="Email" label="Email"></Input>
+            <Input
+              inputType="text"
+              name="Org"
+              label="Place of employment"
+            ></Input>
+            <Select
+              options={roleOptions}
+              name="org_role"
+              labelText="Current Role"
+            />
+            <Input
+              inputType="text"
+              name="Address1"
+              label="Address Line 1"
+            ></Input>
+            <Input
+              inputType="text"
+              name="Address2"
+              label="Address Line 2"
+            ></Input>
+            <Input inputType="text" name="Suburb" label="Suburb"></Input>
+            <Input inputType="text" name="State" label="State"></Input>
+            <Input inputType="text" name="PostCode" label="Post Code"></Input>
+            <Select
+              options={sizeOptions}
+              name="top_size"
+              labelText="Scrub top size"
+            />
+            <Select
+              options={sizeOptions}
+              name="bottom_size"
+              labelText="Scrub bottom size"
+            />
+            <Input inputType="number" label="Scrub Length" />
             <Input inputType="number" label="Quantity"></Input>
-            <Input inputType="text" label="Address Line 1"></Input>
-            <Input inputType="text" label="Address Line 2"></Input>
-            <Input inputType="text" label="Suburn"></Input>
-            <Input inputType="text" label="State"></Input>
-            <Input inputType="text" label="Post Code"></Input>
             <br />
             <Button colors="primaryWithBg" type="submit" title="Submit" />
           </form>
