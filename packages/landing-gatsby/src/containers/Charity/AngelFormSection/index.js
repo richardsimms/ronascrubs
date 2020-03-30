@@ -34,7 +34,24 @@ const sizeOptions = [
 ];
 
 const handleSubmit = e => {
-  console.log('submit clicked');
+  e.preventDefault();
+  const data = new FormData(e.target);
+  const json = JSON.stringify(Object.fromEntries(data));
+  fetch('http://localhost:3000/API/Users/AngelSignUp', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: json,
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  console.log(json);
 };
 
 const AngelFormSection = () => {
@@ -53,7 +70,7 @@ const AngelFormSection = () => {
             <Input inputType="text" label="Phone"></Input>
             <Input inputType="text" label="Address Line 1"></Input>
             <Input inputType="text" label="Address Line 2"></Input>
-            <Input inputType="text" label="Suburn"></Input>
+            <Input inputType="text" label="Suburb"></Input>
             <Input inputType="text" label="State"></Input>
             <Input inputType="text" label="Post Code"></Input>
             <br />
