@@ -43,21 +43,17 @@ const BannerSection = () => {
       <ContentWrapper>
         <TextArea>
           <HighlightedText className="highlighted_text">
-            <strong>HELP</strong> sew scrubs for our heroes medics 
+            <strong>HELP</strong> sew scrubs for our heroes medics
           </HighlightedText>
-          <Heading
-            content="Scrubs made with TLC"
-          />
+          <Heading content="Scrubs made with TLC" />
           <Heading
             as="h4"
             content="Rona Scrubs is a not for profit organisation creating scrubs for our healthcare staff"
           />
-          <Text
-            content="Our mission is to provide a new way of giving back to our medical heroes, and the wider community, during the COVID-19 pandemic."
-          />
-          <a className="learn__more-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc8qIX3uxn4xe-51B6QajcOziCZPiJMZJb14JZPCxnCbTXmDw/viewform">
+          <Text content="Our mission is to provide a new way of giving back to our medical heroes, and the wider community, during the COVID-19 pandemic." />
+          <a className="learn__more-btn" href="/signup_hero">
             <span className="hyphen" />
-            <span className="btn_text">Order scrubs </span>         
+            <span className="btn_text">Order scrubs </span>
           </a>
         </TextArea>
         <ImageArea>

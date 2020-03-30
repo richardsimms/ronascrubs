@@ -19,6 +19,12 @@ const Navbar = () => {
           <Link className="smooth_scroll" to="/about" offset={81}>
             About
           </Link>
+          {/* <Link className="smooth_scroll" to="/signup_hero" offset={81}>
+            Hero sign-up
+          </Link>
+          <Link className="smooth_scroll" to="/signup_angel" offset={81}>
+            Angel sign-up
+          </Link> */}
         </MenuWrapper>
       </Container>
     </NavbarWrapper>
