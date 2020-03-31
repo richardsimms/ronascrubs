@@ -122,7 +122,7 @@ const HeroFormSection = () => {
                 handleReset,
               } = props;
               return (
-                <form onSubmit={handleSubmit} method="post">
+                <form onSubmit={handleSubmit} method="post" margin="auto">
                   <Input
                     inputType="text"
                     name="first_name"

@@ -63,7 +63,7 @@ export const ContentArea = styled.div`
   flex-wrap: wrap;
   width: 100%;
     p {
-      width: 80%;
+      width: 60%;
       margin: 0 auto;
       @media only screen and (max-width: 767px) {
         width: 100%;
