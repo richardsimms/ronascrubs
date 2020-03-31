@@ -64,11 +64,13 @@
     ]
   },
   "dependencies": {
+    "formik": "^2.1.4",
     "gatsby-plugin-anchor-links": "^1.1.1",
     "gatsby-plugin-fullstory": "^2.2.1",
     "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-hotjar": "^1.0.1",
     "polished": "^3.4.4",
-    "react-select": "^3.1.0"
+    "react-select": "^3.1.0",
+    "yup": "^0.28.3"
   }
 }

@@ -55,7 +55,6 @@ export const SectionHeader = styled.header`
       line-height: 28px;
     }
   }
-
 `;
 
 export const ContentArea = styled.div`
@@ -64,7 +63,7 @@ export const ContentArea = styled.div`
   flex-wrap: wrap;
   width: 100%;
     p {
-      width: 60%;
+      width: 80%;
       margin: 0 auto;
       @media only screen and (max-width: 767px) {
         width: 100%;
@@ -93,13 +92,16 @@ export const ContentArea = styled.div`
   form {
     width: 50%;
     align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     @media only screen and (max-width: 991px) {
       width: 80%;
     }
     @media only screen and (max-width: 767px) {
-     width: 100%;
+      width: 100%;
     }
+  }
+  .error-message {
+    color: red;
   }
 `;
 

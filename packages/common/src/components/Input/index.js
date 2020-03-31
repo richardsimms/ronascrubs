@@ -54,7 +54,7 @@ const Input = ({
       ...state,
       value: event.target.value,
     });
-    onChange(event.target.value);
+    onChange(event);
   };
 
   // get input focus class
@@ -145,7 +145,7 @@ const Input = ({
           <input
             {...props}
             id={htmlFor}
-            name={htmlFor}
+            // name={htmlFor}
             type={inputType}
             value={state.value}
             onChange={handleOnChange}

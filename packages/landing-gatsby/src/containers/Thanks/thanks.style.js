@@ -14,13 +14,13 @@ export const ErrorConatent = styled.div`
 
   .image-wrapper {
     max-width: 20%;
-        
-      margin-left: auto;
-      margin-right: auto;
-    
-      img {
-        width: 100px;
-      }
+
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      width: 100px;
+    }
   }
 `;
 

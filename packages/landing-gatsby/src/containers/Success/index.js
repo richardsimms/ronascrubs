@@ -13,7 +13,6 @@ import { home } from 'react-icons-kit/entypo/home';
 import { ErrorWrapper, ErrorConatent, ButtonWrapper } from './success.style';
 
 const ErrorSec = ({ imageWrapper, title, text, homeButton }) => {
-
   return (
     <ErrorWrapper>
       <ErrorConatent>
@@ -26,7 +25,6 @@ const ErrorSec = ({ imageWrapper, title, text, homeButton }) => {
           content="We have received your order and will be in touch shortly"
         />
         <ButtonWrapper>
-          
           <Link href="/">
             <Button
               {...homeButton}
