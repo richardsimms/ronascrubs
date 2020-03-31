@@ -45,19 +45,15 @@ const BannerSection = () => {
           <HighlightedText className="highlighted_text">
             <strong>NEWS</strong> Sew scrubs for our healthcare heroes 
           </HighlightedText>
-          <Heading
-            content="Scrubs made with TLC"
-          />
+          <Heading content="Scrubs made with TLC" />
           <Heading
             as="h4"
             content="Rona Scrubs is a not-for-profit charitable organisation, creating scrubs for healthcare heroes in response to COVID-19"
           />
-          <Text
-            content="Our mission is to provide a new way of giving back to our medical heroes, and the wider community, during the COVID-19 pandemic."
-          />
-          <a className="learn__more-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc8qIX3uxn4xe-51B6QajcOziCZPiJMZJb14JZPCxnCbTXmDw/viewform">
+          <Text content="Our mission is to provide a new way of giving back to our medical heroes, and the wider community, during the COVID-19 pandemic." />
+          <a className="learn__more-btn" href="/signup_hero">
             <span className="hyphen" />
-            <span className="btn_text">Order scrubs </span>         
+            <span className="btn_text">Order scrubs </span>
           </a>
         </TextArea>
         <ImageArea>

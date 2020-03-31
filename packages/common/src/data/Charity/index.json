@@ -305,13 +305,13 @@
       "id": 1,
       "logo": "../../assets/image/charity/clients/1.png",
       "name": "Spotlight",
-      "link": "https://www.spotlightstores.com"
+      "to": "https://www.spotlightstores.com"
     },
     {
       "id": 2,
       "logo": "../../assets/image/charity/clients/2.png",
       "name": "Acendre",
-      "link": "https://www.acendre.com"
+      "to": "https://www.acendre.com"
     },
     {
       "id": 3,

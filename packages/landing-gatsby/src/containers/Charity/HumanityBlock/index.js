@@ -46,7 +46,7 @@ const HumanityBlock = ({ row, col }) => {
           </Box>
           <Box className="col" {...col}>
             <ContentWrapper>
-              <Heading  content={slogan} />
+              <Heading content={slogan} />
               <Heading as="h5" content={title} />
               <Text content={text} />
               <List>
@@ -55,7 +55,7 @@ const HumanityBlock = ({ row, col }) => {
                 ))}
               </List>
 
-              <a className="learn__more-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeMwXpFarvbn0kNnKXjbyi71mvnz_ybJgpbwPWG_cd4c_qiww/viewform">
+              <a className="learn__more-btn" href="/signup_hero">
                 <span className="hyphen" />
                 <span className="btn_text">Order you scrubs</span>
               </a>

@@ -4,9 +4,10 @@ import { themeGet } from 'styled-system';
 const SelectStyle = styled.div`
   /* Select label default style */
   .reusecore__field-label {
-    color: ${themeGet('colors.labelColor', '#767676')};
-    font-size: ${themeGet('fontSizes.4', '16')}px;
-    font-weight: ${themeGet('fontWeights.4', '500')};
+    color: ${themeGet('colors.text', '#294859')};
+    font-size: 16px;
+    font-weight: 400;
+    
   }
 
   /* Select label style when labelPosition on left */
@@ -15,6 +16,7 @@ const SelectStyle = styled.div`
     align-items: center;
     .reusecore__field-label {
       margin-right: ${themeGet('space.3', '10')}px;
+      
     }
   }
 
@@ -39,7 +41,7 @@ const SelectStyle = styled.div`
   &.label_bottom {
     .reusecore__field-label {
       display: flex;
-      margin-top: ${themeGet('space.2', '8')}px;
+      margin-top: ${themeGet('space.2', '2')}px;
     }
   }
 `;

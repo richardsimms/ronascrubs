@@ -61,7 +61,7 @@ const PromotionBlock = ({ row, col }) => {
                   <Item key={`list_key${item.id}`}>{item.text}</Item>
                 ))}
               </List>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8qIX3uxn4xe-51B6QajcOziCZPiJMZJb14JZPCxnCbTXmDw/viewform" className="learn__more-btn">
+              <a href="signup_angel" className="learn__more-btn">
                 <span className="hyphen" />
                 <span className="btn_text">Become a Rona Scrubs Angel </span>
               </a>
