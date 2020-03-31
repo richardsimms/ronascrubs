@@ -5,6 +5,7 @@ import Text from 'common/src/components/Text';
 // import Select from 'common/src/components/Select';
 import Input from 'common/src/components/Input';
 import Button from 'common/src/components/Button';
+import { Link } from 'gatsby';
 import SectionWrapper, {
   SectionHeader,
   ContentArea,
@@ -38,7 +39,9 @@ const AngelFormSection = () => {
             <Input inputType="text" label="State"></Input>
             <Input inputType="text" label="Postcode"></Input>
             <br />
-            <Button colors="primaryWithBg" type="submit" title="Submit" />
+            <Link to="/angel-success">
+              <Button colors="primaryWithBg" type="submit" title="Submit" />
+            </Link>
           </form>
         </ContentArea>
       </Container>

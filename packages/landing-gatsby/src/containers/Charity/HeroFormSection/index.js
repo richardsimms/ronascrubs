@@ -5,6 +5,7 @@ import Text from 'common/src/components/Text';
 import Select from 'common/src/components/Select';
 import Input from 'common/src/components/Input';
 import Button from 'common/src/components/Button';
+import { Link } from 'gatsby';
 import SectionWrapper, {
   SectionHeader,
   ContentArea,
@@ -99,7 +100,9 @@ const HeroFormSection = () => {
             <Input inputType="number" label="Inside leg length (cm)" />
             <Input inputType="number" label="Quantity"></Input>
             <br />
-            <Button colors="primaryWithBg" type="submit" title="Submit" />
+            <Link to="/hereo-success">
+              <Button colors="primaryWithBg" type="submit" title="Submit" />
+            </Link>
           </form>
         </ContentArea>
       </Container>

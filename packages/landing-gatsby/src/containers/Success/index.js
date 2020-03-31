@@ -14,9 +14,7 @@ import { home } from 'react-icons-kit/entypo/home';
 import { ErrorWrapper, ErrorConatent, ButtonWrapper } from './success.style';
 
 const ErrorSec = ({ imageWrapper, title, text, homeButton }) => {
-  const pageReload = () => {
-    window.location.reload();
-  };
+
   return (
     <ErrorWrapper>
       <ErrorConatent>
