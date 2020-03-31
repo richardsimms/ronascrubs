@@ -93,23 +93,7 @@ form {
   @media only screen and (max-width: 767px) {
    width: 100%;
   }
-  span {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-top: 18px;
-    margin-bottom: 8px;
-    color: ${themeGet('colors.text', '#294859')};
-    @media only screen and (max-width: 1440px) {
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-    @media only screen and (max-width: 1360px) {
-      margin-bottom: 8px;
-    }
-    @media only screen and (max-width: 991px) {
-    }
-  }
+  
 }
 `;
 

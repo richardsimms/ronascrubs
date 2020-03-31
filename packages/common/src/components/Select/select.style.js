@@ -7,6 +7,8 @@ const SelectStyle = styled.div`
     color: ${themeGet('colors.text', '#294859')};
     font-size: 16px;
     font-weight: 400;
+    margin-top: 18px;
+    margin-bottom: 8px;
     
   }
 
