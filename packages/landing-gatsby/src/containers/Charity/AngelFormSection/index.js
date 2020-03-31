@@ -5,6 +5,7 @@ import Text from 'common/src/components/Text';
 // import Select from 'common/src/components/Select';
 import { Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { navigate } from 'gatsby';
 import Input from 'common/src/components/Input';
 import Button from 'common/src/components/Button';
 
@@ -52,6 +53,9 @@ const AngelFormSection = () => {
                   .then(response => response.json())
                   .then(data => {
                     console.log('Success:', data);
+                    if (data.success) {
+                      navigate('/angel-success');
+                    }
                   })
                   .catch(error => {
                     console.error('Error:', error);
@@ -244,8 +248,3 @@ const AngelFormSection = () => {
 };
 
 export default AngelFormSection;
-
-
-
-          
-      

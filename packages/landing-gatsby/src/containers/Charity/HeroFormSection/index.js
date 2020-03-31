@@ -7,13 +7,12 @@ import * as Yup from 'yup';
 import Select from 'common/src/components/Select';
 import Input from 'common/src/components/Input';
 import Button from 'common/src/components/Button';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import SectionWrapper, {
   SectionHeader,
   ContentArea,
 } from './heroFormSection.style';
 import chartSize from 'common/src/assets/image/charity/sizechart.jpeg';
-
 
 const roleOptions = [
   { value: 'doctor', label: 'Doctor' },
@@ -21,6 +20,7 @@ const roleOptions = [
   { value: 'allied', label: 'Allied Health Staff' },
   { value: 'pca', label: 'PCA' },
   { value: 'clerical', label: 'Clerical Staff' },
+  { value: 'other', label: 'Other' },
 ];
 
 const sizeOptions = [
@@ -41,8 +41,8 @@ const HeroFormSection = () => {
           <Heading content="Scrubs order form" />
         </SectionHeader>
         <ContentArea>
-        <Text content="Please complete the below details so that we can organise a set of scrubs to be made for you." />
-        <Text content="We are still in the very early stages at Rona Scrubs and request that you keep your order to no more than 2 sets of scrubs per person. Please also note that at this stage we are rolling out Rona Scrubs in our home city of Melbourne initially. If you are outside of Melbourne, you can still order and we will reach out to you directly to talk about how we can help get scrubs to you." />
+          <Text content="Please complete the below details so that we can organise a set of scrubs to be made for you." />
+          <Text content="We are still in the very early stages at Rona Scrubs and request that you keep your order to no more than 2 sets of scrubs per person. Please also note that at this stage we are rolling out Rona Scrubs in our home city of Melbourne initially. If you are outside of Melbourne, you can still order and we will reach out to you directly to talk about how we can help get scrubs to you." />
         </ContentArea>
         <ContentArea>
           <Formik
@@ -52,6 +52,7 @@ const HeroFormSection = () => {
               email: '',
               org: '',
               org_role: '',
+              org_role_other: '',
               address_line_1: '',
               address_line_2: '',
               suburb: '',
@@ -74,10 +75,13 @@ const HeroFormSection = () => {
                 })
                   .then(response => response.json())
                   .then(data => {
-                    console.log('Success:', data);
+                    console.log(data);
+                    if (data.success) {
+                      navigate('/hereo-success');
+                    }
                   })
                   .catch(error => {
-                    console.error('Error:', error);
+                    console.error(error);
                   });
                 setSubmitting(false);
               }, 400);
@@ -94,6 +98,7 @@ const HeroFormSection = () => {
                 .required('Email-Address required'),
               org: Yup.string().required('Place of employment required'),
               org_role: Yup.string().required('Current role required'),
+              org_role_other: Yup.string().required('Please specify a role'),
               address_line_1: Yup.string().required('Address Line 1 required'),
               suburb: Yup.string().required('Suburb required'),
               state: Yup.string().required('State required'),
@@ -182,6 +187,21 @@ const HeroFormSection = () => {
                     className="error-message"
                     component="div"
                   />
+                  {values.org_role === 'other' && (
+                    <>
+                      <Input
+                        inputType="text"
+                        name="org_role_other"
+                        label="Please specify your role"
+                        onChange={handleChange}
+                      ></Input>
+                      <ErrorMessage
+                        name="org_role_other"
+                        className="error-message"
+                        component="div"
+                      />
+                    </>
+                  )}
                   <Input
                     inputType="text"
                     name="address_line_1"
@@ -234,7 +254,10 @@ const HeroFormSection = () => {
                     className="error-message"
                     component="div"
                   />
-                  <Text content="Sizes are unisex. Ladies we recommend 2 sizes smaller than your normal size." /><a href={chartSize} target="_blank" rel="noopener noreferrer" >See the size guide to be certain you order the right size.</a>
+                  <Text content="Sizes are unisex. Ladies we recommend 2 sizes smaller than your normal size." />
+                  <a href={chartSize} target="_blank" rel="noopener noreferrer">
+                    See the size guide to be certain you order the right size.
+                  </a>
                   <Select
                     options={sizeOptions}
                     name="top_size"
@@ -304,5 +327,3 @@ const HeroFormSection = () => {
 };
 
 export default HeroFormSection;
-
-  
