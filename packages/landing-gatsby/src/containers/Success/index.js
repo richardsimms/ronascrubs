@@ -7,8 +7,7 @@ import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
 import Image from 'common/src/components/Image';
 import Button from 'common/src/components/Button';
-
-import ErrorImage from 'common/src/assets/image/success.svg';
+import ErrorImage from 'common/src/assets/image/charity/scrubs.svg';
 
 import { home } from 'react-icons-kit/entypo/home';
 import { ErrorWrapper, ErrorConatent, ButtonWrapper } from './success.style';
@@ -21,10 +20,10 @@ const ErrorSec = ({ imageWrapper, title, text, homeButton }) => {
         <Box {...imageWrapper} className="image-wrapper">
           <Image src={ErrorImage} alt="success" />
         </Box>
-        <Heading {...title} content="Order complete" />
+        <Heading {...title} content="Thank you for your order!" />
         <Text
           {...text}
-          content="Your order (Summary) will be made and delivered shortly."
+          content="We have received your order and will be in touch shortly"
         />
         <ButtonWrapper>
           

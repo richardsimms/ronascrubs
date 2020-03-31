@@ -24,9 +24,12 @@ const AngelFormSection = () => {
     <SectionWrapper id="angelform">
       <Container width="1260px">
         <SectionHeader>
-          <Heading content="Angel Sign up form" />
-          <Text content="Sign up here to help out with sewing" />
+          <Heading content="Volunteer to sew scrubs" />
         </SectionHeader>
+        <ContentArea>
+          <Text content="Please complete the below details so that we can get you set up to start making scrubs for our amazing healthcare heroes." />
+          <Text content="We are still in the very early stages at Rona Scrubs and are currently primarily based in our home city of Melbourne at this stage. If you are outside of Melbourne, you can still volunteer and we will reach out to you directly to talk about how we can help get you onboard." />
+        </ContentArea>
         <ContentArea>
           <form onSubmit={handleSubmit} method="post">
             <Input inputType="text" label="First name"></Input>
@@ -43,6 +46,10 @@ const AngelFormSection = () => {
               <Button colors="primaryWithBg" type="submit" title="Submit" />
             </Link>
           </form>
+        </ContentArea>
+        <ContentArea>
+          <Text content="Your personal information will only be used by Rona Scrubs as required to get you onboarded and up and running to make scrubs. Our Privacy policy explains how we store personal information and how you may access, correct or complain about the handling of personal information." />
+          <Text content="This form is only to be used for the purposes of sending genuine requests to Rona Scrubs." />
         </ContentArea>
       </Container>
     </SectionWrapper>

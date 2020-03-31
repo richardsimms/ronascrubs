@@ -58,55 +58,13 @@ export const SectionHeader = styled.header`
 `;
 
 export const ContentArea = styled.div`
-display: flex;
-padding-bottom: 40px;
-flex-wrap: wrap;
-width: 100%;
-p {
-  width: 60%;
-  margin: 0 auto;
-  @media only screen and (max-width: 767px) {
-    width: 100%;
-  }
-}
-
-form > p {
+  display: flex;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
   width: 100%;
-  margin: 40px 0 10px;
-}
-@media only screen and (max-width: 480px) {
-  flex-direction: column;
-}
-label {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  margin-top: 18px;
-  margin-bottom: 8px;
-  color: ${themeGet('colors.text', '#294859')};
-  @media only screen and (max-width: 1440px) {
-    font-size: 16px;
-    margin-bottom: 8px;
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
   }
-  @media only screen and (max-width: 1360px) {
-    margin-bottom: 8px;
-  }
-  @media only screen and (max-width: 991px) {
-  }
-}
-
-form {
-  width: 50%;
-  align: center;
-  margin: 0 auto; 
-  @media only screen and (max-width: 991px) {
-    width: 80%;
-  }
-  @media only screen and (max-width: 767px) {
-   width: 100%;
-  }
-  
-}
 `;
 
 export const ImageWrapper = styled.div`
@@ -120,7 +78,7 @@ export const ImageWrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  width: 50%;
+  width: 100%;
   padding-left: 100px;
   @media only screen and (max-width: 1440px) {
     padding-left: 70px;
@@ -129,7 +87,7 @@ export const TextWrapper = styled.div`
     padding-left: 60px;
   }
   @media only screen and (max-width: 991px) {
-    width: 48%;
+    
     padding-left: 40px;
   }
   @media only screen and (max-width: 767px) {

@@ -335,7 +335,7 @@
   "menuWidgets": [
     {
       "id": 1,
-      "title": "SUPPORTERS",
+      "title": "KEY SUPPORTERS",
       "menu": [
         {
           "id": 1,
@@ -346,6 +346,11 @@
           "id": 2,
           "text": "Acendre",
           "link": "https://www.acendre.com"
+        },
+        {
+          "id": 3,
+          "text": "Russell Kennedy",
+          "link": "https://www.russellkennedy.com.au"
         }
       ]
     },
@@ -355,11 +360,6 @@
       "title": "RESOURCES",
       "menu": [
         {
-          "id": 1,
-          "text": "Login",
-          "link": "#1"
-        },
-        {
           "id": 2,
           "text": "About",
           "link": "/about"
@@ -367,7 +367,7 @@
         {
           "id": 3,
           "text": "Privacy Policy",
-          "link": "#1"
+          "link": "/privacy"
         }
       ]
     }

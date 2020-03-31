@@ -69,6 +69,7 @@ export const ContentArea = styled.div`
 
 export const ImageWrapper = styled.div`
   width: 50%;
+  padding:40px;
   @media only screen and (max-width: 991px) {
     width: 42%;
   }
@@ -79,12 +80,11 @@ export const ImageWrapper = styled.div`
 
 export const TextWrapper = styled.div`
   width: 50%;
-  padding-left: 100px;
   @media only screen and (max-width: 1440px) {
     padding-left: 70px;
   }
   @media only screen and (max-width: 1360px) {
-    padding-left: 60px;
+    padding: 0 40px;
   }
   @media only screen and (max-width: 991px) {
     width: 48%;

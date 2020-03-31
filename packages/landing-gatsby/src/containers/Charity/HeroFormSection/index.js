@@ -11,6 +11,8 @@ import SectionWrapper, {
   ContentArea,
 
 } from './heroFormSection.style';
+import chartSize from 'common/src/assets/image/charity/sizechart.jpeg';
+
 
 const roleOptions = [
   { value: 'doctor', label: 'Doctor' },
@@ -56,9 +58,13 @@ const HeroFormSection = () => {
     <SectionWrapper id="angelform">
       <Container width="1260px">
         <SectionHeader>
-          <Heading content="Hero Sign up form" />
-          <Text content="Fill out an order for a scrub" />
+          <Heading content="Scrubs order form" />
         </SectionHeader>
+        <ContentArea>
+          <Text content="Please complete the below details so that we can organise a set of scrubs to be made for you." />
+          <Text content="We are still in the very early stages at Rona Scrubs and request that you keep your order to no more than 2 sets of scrubs per person. Please also note that at this stage we are rolling out Rona Scrubs in our home city of Melbourne initially. If you are outside of Melbourne, you can still order and we will reach out to you directly to talk about how we can help get scrubs to you." />
+          
+        </ContentArea>
         <ContentArea>
           <form onSubmit={handleSubmit} method="post">
             <Input inputType="text" name="FirstName" label="First name"></Input>
@@ -87,6 +93,7 @@ const HeroFormSection = () => {
             <Input inputType="text" name="Suburb" label="Suburb"></Input>
             <Input inputType="text" name="State" label="State"></Input>
             <Input inputType="text" name="PostCode" label="Postcode"></Input>
+            <Text content="Sizes are unisex. Ladies we recommend 2 sizes smaller than your normal size." /><a href={chartSize} target="_blank" rel="noopener noreferrer" >See the size guide to be certain you order the right size.</a>
             <Select
               options={sizeOptions}
               name="top_size"
@@ -104,6 +111,10 @@ const HeroFormSection = () => {
               <Button colors="primaryWithBg" type="submit" title="Submit" />
             </Link>
           </form>
+        </ContentArea>
+        <ContentArea>
+          <Text content="Your personal information will only be passed to a Sewer if required to distribute scrubs to you or as otherwise agreed with you. They are required not to use your information for any other purpose. Our Privacy policy explains how we store personal information and how you may access, correct or complain about the handling of personal information." />
+          <Text content="This form is only to be used for the purposes of sending genuine orders to Rona Scrubs." />
         </ContentArea>
       </Container>
     </SectionWrapper>

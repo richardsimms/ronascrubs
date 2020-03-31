@@ -21,10 +21,10 @@ const ErrorSec = ({ imageWrapper, title, text, homeButton }) => {
         <Box {...imageWrapper} className="image-wrapper">
           <Image src={ErrorImage} alt="success" />
         </Box>
-        <Heading {...title} content="Thank you" />
+        <Heading {...title} content="Thank you for volunteering! " />
         <Text
           {...text}
-          content="Your order (Summary) will be made and delivered shortly."
+          content="We have received your information and will be in touch shortly"
         />
         <ButtonWrapper>
           

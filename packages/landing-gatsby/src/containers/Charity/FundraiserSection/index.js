@@ -17,10 +17,10 @@ import missionImage from 'common/src/assets/image/charity/mission.jpg';
 const FundraiserSection = () => {
   return (
     <SectionWrapper id="fundraisers">
-      <Container width="1260px">
+      <Container>
         <SectionHeader>
           <Heading content="About Rona Scrubs" />
-          <Text content="Our mission is to ease some of these burdens for healthcare workers so they can focus on where they add the most value." />
+          <Text content="Our mission is to ease some of the burdens for healthcare workers by providing as many as we can with scrubs made by our fabulous sewing volunteers so that they can focus on where they add the most value." />
         </SectionHeader>
         <ContentArea>
           <ImageWrapper>
@@ -33,7 +33,7 @@ const FundraiserSection = () => {
             <Heading as="h3" content="Why are we making scrubs?" />
             <Text
               content="
-              You’re right, scrubs alone will not provide sufficient protection for our healthcare workers against COVID-19. However, donning a uniform upon arrival at work does reduce the risk of outside contamination of that workplace. The same can be said in reverse. By removing a uniform (or scrubs) before leaving the workplace, potential contamination into the community or home of the healthcare worker can be minimised.
+              While scrubs alone will not provide sufficient protection for our healthcare workers against COVID-19, donning a uniform upon arrival at work does reduce the risk of outside contamination of that workplace. Conversely, removing a uniform (or scrubs) before leaving the workplace minimises the risk of potential contamination into the wider community and the homes of healthcare workers.
             "
             />
             
@@ -49,14 +49,12 @@ const FundraiserSection = () => {
             <Heading as="h3" content="Your help really counts" />
             <Text
               content="
-              With the help of some amazing businesses we are delivering kits to at home sewers to make scrubs (fabric, thread and a pattern). We will then arrange to collect and distribute those scrubs to health care workers who need them.
-              Our approach is focused on getting the most scrubs made, as quickly as possible, whilst ensuring everyone involved adheres to the current Government protocols aimed at reducing the spread of COVID-19.
-              If you’d like to help, you can register to volunteer as a sewer (or let us know how else you can help). Otherwise you can also donate. All donations go directed back into 
+              With the help of some amazing businesses we are delivering kits (fabric, thread and a pattern) to our sewing volunteers so that they can make scrubs in the comfort of their own homes. We will then arrange to collect and distribute those scrubs to healthcare workers who need them. Our approach is focused on getting as many scrubs made as quickly as possible, whilst ensuring everyone involved adheres to the current Government protocols aimed at reducing the spread of COVID-19. If you’d like to help, you can register to volunteer to sew scrubs (or let us know how else you can help). Otherwise you can also donate. All donations go directed back into funding our mission to support healthcare workers.
             "
             />
           </TextWrapper>
           <ImageWrapper>
-            <Image src={fundraisersImage} alt="Charity" />
+            <Image src={fundraisersImage} alt="Charity"  />
           </ImageWrapper>
         </ContentArea>
       </Container>

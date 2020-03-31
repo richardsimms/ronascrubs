@@ -69,7 +69,7 @@ const Footer = ({ row, col, colOne, colTwo }) => {
                 <List>
                   {widget.menu.map(item => (
                     <ListItem key={`list__item-${item.id}`}>
-                      <Link to={item.link}>{item.text}</Link>
+                      <a href={item.link}>{item.text}</a>
                     </ListItem>
                   ))}
                 </List>

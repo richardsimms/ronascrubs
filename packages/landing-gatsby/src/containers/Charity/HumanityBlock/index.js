@@ -41,7 +41,7 @@ const HumanityBlock = ({ row, col }) => {
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <ImageWrapper>
-              <Image src={image.publicURL} alt="Charity Landing" />
+              <Image src={image.publicURL} alt="Scrubs" />
             </ImageWrapper>
           </Box>
           <Box className="col" {...col}>

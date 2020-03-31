@@ -63,6 +63,13 @@ export const ContentArea = styled.div`
   padding-bottom: 40px;
   flex-wrap: wrap;
   width: 100%;
+    p {
+      width: 60%;
+      margin: 0 auto;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
   @media only screen and (max-width: 480px) {
     flex-direction: column;
   }
