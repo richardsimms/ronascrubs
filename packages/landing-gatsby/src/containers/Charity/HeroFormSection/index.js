@@ -98,7 +98,6 @@ const HeroFormSection = () => {
                 .required('Email-Address required'),
               org: Yup.string().required('Place of employment required'),
               org_role: Yup.string().required('Current role required'),
-              org_role_other: Yup.string().required('Please specify a role'),
               address_line_1: Yup.string().required('Address Line 1 required'),
               suburb: Yup.string().required('Suburb required'),
               state: Yup.string().required('State required'),
