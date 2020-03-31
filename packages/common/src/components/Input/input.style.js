@@ -83,6 +83,12 @@ const InputField = styled.div`
     }
   }
 
+  &.error {
+    input {
+      border-color: red;
+    }
+  }
+
   textarea {
     min-height: 150px;
   }
