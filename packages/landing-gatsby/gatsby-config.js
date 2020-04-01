@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: ` A not for profit organisation creating scrubs for our healthcare staff`,
     description: `Our mission is to provide a new way of giving back to our medical heroes, and the wider community, during the COVID-19 pandemic.`,
-    author: `RSIMMS`,
+    author: `Rona Scrubs`,
   },
   plugins: [
     {
@@ -119,17 +119,17 @@ module.exports = {
         // The property ID; the tracking code won't be generated without it
         trackingId: "UA-56512737-7",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        // head: false,
         // Setting this parameter is optional
         anonymize: false,
         // Setting this parameter is also optional
-        respectDNT: true,
+         respectDNT: true,
         // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
+        // pageTransitionDelay: 0,
         // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "ronascrubs.com",
+        // sampleRate: 5,
+        // siteSpeedSampleRate: 10,
+        // cookieDomain: "ronascrubs.com",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
