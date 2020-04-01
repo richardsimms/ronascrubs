@@ -317,7 +317,7 @@ const HeroFormSection = () => {
           </Formik>
         </ContentArea>
         <ContentArea>
-          <Text content="Your personal information will only be passed to a Sewer if required to distribute scrubs to you or as otherwise agreed with you. They are required not to use your information for any other purpose. Our Privacy policy explains how we store personal information and how you may access, correct or complain about the handling of personal information." />
+          <Text content="Your personal information will only be passed to a sewing volunteer if required to distribute scrubs to you or as otherwise agreed with you. They are required not to use your information for any other purpose. Our Privacy policy explains how we store personal information and how you may access, correct or complain about the handling of personal information." />
           <Text content="This form is only to be used for the purposes of sending genuine orders to Rona Scrubs." />
         </ContentArea>
       </Container>

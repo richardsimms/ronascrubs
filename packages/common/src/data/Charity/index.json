@@ -213,7 +213,7 @@
     "image": "../../assets/image/charity/humanity-glob.png",
     "slogan": "DO YOU NEED SCRUBS?",
     "title": "How to order scrubs",
-    "text": "Rona Scrubs is here to help. We have volunteer Angels ready to make you your own set of scrubs and have them delivered to you. ",
+    "text": "Rona Scrubs is here to help. We have volunteer Angels ready to make you a set of scrubs. We'll work with you to get them safely to you. ",
     "lists": [
       {
         "id": 1,
@@ -222,10 +222,6 @@
       {
         "id": 2,
         "text": "Choose your size"
-      },
-      {
-        "id": 3,
-        "text": "We deliver to you"
       }
     ]
   },
