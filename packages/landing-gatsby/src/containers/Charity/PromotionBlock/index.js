@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Box from 'common/src/components/Box';
 import Image from 'common/src/components/Image';
 import Text from 'common/src/components/Text';
@@ -61,10 +61,10 @@ const PromotionBlock = ({ row, col }) => {
                   <Item key={`list_key${item.id}`}>{item.text}</Item>
                 ))}
               </List>
-              <a href="signup_angel" className="learn__more-btn">
+              <Link to="/signup_angel" className="learn__more-btn">
                 <span className="hyphen" />
                 <span className="btn_text">Become a Rona Scrubs Angel </span>
-              </a>
+              </Link>
             </ContentWrapper>
           </Box>
           <Box className="col" {...col}>

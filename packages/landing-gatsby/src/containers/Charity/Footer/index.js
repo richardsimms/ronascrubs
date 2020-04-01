@@ -42,8 +42,13 @@ const Footer = ({ row, col, colOne, colTwo }) => {
             <Link to="/charity" className="logo">
               <Image src={LogoImage} alt="Charity" />
             </Link>
-
-            <Text className="text" content="" />
+            <Link to="/about">
+            <Text className="text" content="About" />
+              </Link>
+            <Link to="/privacy">
+            <Text className="text" content="Privacy Policy" />
+             </Link>
+            
             <a
               aria-label="go to mail"
               href="mailto:info@ronascrubs.com"
@@ -85,7 +90,9 @@ const Footer = ({ row, col, colOne, colTwo }) => {
               className="text"
               content="© 2020 Rona Scrubs. All Rights Reserved"
             />
+            
           </CopyrightText>
+        
           <SocialList>
             <li className="facebook">
               <a
@@ -94,6 +101,7 @@ const Footer = ({ row, col, colOne, colTwo }) => {
               >
                 <Icon icon={facebook} />
               </a>
+              
             </li>
           </SocialList>
         </Box>

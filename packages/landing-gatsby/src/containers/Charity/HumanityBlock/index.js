@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Box from 'common/src/components/Box';
 import Image from 'common/src/components/Image';
 import Text from 'common/src/components/Text';
@@ -55,10 +55,10 @@ const HumanityBlock = ({ row, col }) => {
                 ))}
               </List>
 
-              <a className="learn__more-btn" href="/signup_hero">
+              <Link className="learn__more-btn" to="/signup_hero">
                 <span className="hyphen" />
                 <span className="btn_text">Order you scrubs</span>
-              </a>
+              </Link>
             </ContentWrapper>
           </Box>
         </Box>

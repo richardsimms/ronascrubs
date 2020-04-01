@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Image from 'gatsby-image';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
@@ -51,10 +51,10 @@ const BannerSection = () => {
             content="Rona Scrubs is a not-for-profit charitable organisation, creating scrubs for healthcare heroes in response to COVID-19"
           />
           <Text content="Our mission is to provide a new way of giving back to our medical heroes, and the wider community, during the COVID-19 pandemic." />
-          <a className="learn__more-btn" href="/signup_hero">
+          <Link className="learn__more-btn" to="/signup_hero">
             <span className="hyphen" />
             <span className="btn_text">Order scrubs </span>
-          </a>
+          </Link>
         </TextArea>
         <ImageArea>
           <GlideCarousel

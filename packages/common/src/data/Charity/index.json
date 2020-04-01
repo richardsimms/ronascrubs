@@ -353,35 +353,18 @@
           "link": "https://www.russellkennedy.com.au"
         }
       ]
-    },
-
-    {
-      "id": 3,
-      "title": "RESOURCES",
-      "menu": [
-        {
-          "id": 2,
-          "text": "About",
-          "link": "/about"
-        },
-        {
-          "id": 3,
-          "text": "Privacy Policy",
-          "link": "/privacy"
-        }
-      ]
     }
   ],
   "copyright": [
     {
       "id": 1,
-      "text": "Privacy Policy",
-      "link": "1#"
+      "text": "About",
+      "link": "/about"
     },
     {
       "id": 2,
-      "text": "Terms and Conditions",
-      "link": "1#"
+      "text": "Privacy Policy",
+      "link": "/about"
     }
   ]
 }
