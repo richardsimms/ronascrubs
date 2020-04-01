@@ -57,7 +57,7 @@ const HumanityBlock = ({ row, col }) => {
 
               <Link className="learn__more-btn" to="/signup_hero">
                 <span className="hyphen" />
-                <span className="btn_text">Order you scrubs</span>
+                <span className="btn_text">Order your scrubs</span>
               </Link>
             </ContentWrapper>
           </Box>
