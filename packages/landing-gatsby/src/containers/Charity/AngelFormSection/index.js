@@ -73,9 +73,9 @@ const AngelFormSection = () => {
               email: Yup.string()
                 .email('Invalid email address')
                 .required('Email-Address required'),
-              phone: Yup.number()
-                .integer('Invalid phone number')
-                .required('Phone number required'),
+              phone: Yup.string()
+                .required('Phone number required')
+                .max(50, 'Must be 50 characters or less'),
               address_line_1: Yup.string().required('Address Line 1 required'),
               suburb: Yup.string().required('Suburb required'),
               state: Yup.string().required('State required'),
