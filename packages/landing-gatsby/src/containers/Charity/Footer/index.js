@@ -95,7 +95,11 @@ const Footer = ({ row, col, colOne, colTwo }) => {
             />
                <Text 
               className="text"
-              content="ABN: 123456789"
+              content="ABN: 15 640 077 676"
+            />   
+            <Text 
+              className="text"
+              content="ACN: 640 077 676"
             />         
           </CopyrightText>
           

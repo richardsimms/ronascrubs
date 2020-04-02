@@ -1,7 +1,6 @@
 import React from 'react';
 import Container from 'common/src/components/UI/Container';
 import Heading from 'common/src/components/Heading';
-import Text from 'common/src/components/Text';
 
 import SectionWrapper, {
   SectionHeader,

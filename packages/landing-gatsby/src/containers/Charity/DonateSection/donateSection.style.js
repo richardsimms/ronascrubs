@@ -6,7 +6,7 @@ const SectionWrapper = styled.div`
   width: 100%;
   padding: 130px 0 100px;
   margin: 81px 0;
-  background-color: #637A37;
+  background-color: #697B46;
   
   background-repeat: no-repeat;
   background-size: contain;
@@ -66,6 +66,29 @@ export const ContentArea = styled.div`
     @media only screen and (max-width: 991px) {
       line-height: 30px;
     }
+   
+  }
+  li {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 4px 0;
+    list-style-type:disc;
+    margin-left: 18px;
+    color: ${themeGet('colors.white', '#ffffff')};
+    @media only screen and (max-width: 1440px) {
+      font-size: 16px;
+      line-height: 27px;
+    }
+    @media only screen and (max-width: 1360px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media only screen and (max-width: 991px) {
+  
+    }
+
+
+
   }
 `;
 
@@ -197,6 +220,7 @@ export const DonationForm = styled.form`
   }
 
   .input_group {
+    padding-bottom: 20px;
     input {
       @media only screen and (max-width: 1360px) {
         width: calc(100% - 140px);
@@ -242,8 +266,10 @@ export const DonationForm = styled.form`
         }
       }
       .dropdown {
+        z-index: 1000;
         @media only screen and (max-width: 1360px) {
           top: 56px;
+          
         }
         @media only screen and (max-width: 991px) {
           border-radius: 5px;

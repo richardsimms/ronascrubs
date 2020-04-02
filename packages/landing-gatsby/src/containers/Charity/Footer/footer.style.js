@@ -164,10 +164,12 @@ export const ListItem = styled.li`
 export const CopyrightText = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   @media only screen and (max-width: 480px) {
     width: 100%;
     justify-content: center;
     margin-bottom: 10px;
+    
   }
 
   p {

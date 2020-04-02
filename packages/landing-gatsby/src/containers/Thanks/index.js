@@ -26,7 +26,7 @@ const ErrorSec = ({ imageWrapper, title, text, homeButton }) => {
           content="We have received your information and will be in touch shortly"
         />
         <ButtonWrapper>
-          <Link href="/">
+          <Link to="/">
             <Button
               {...homeButton}
               title="Go Home"

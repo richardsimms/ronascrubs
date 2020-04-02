@@ -72,7 +72,7 @@ const DonateSection = ({ row, col }) => {
               HELP US <span>SUPPORT</span> OUR HEALTHCARE HEROES
               </Heading>
               <Text content="To help us get scrubs to as many of our healthcare heroes as possible, we would be very grateful for any support you can offer." />
-              <Text content="We welcome:" />
+              <Text fontWeight="800" content="We welcome:" />
               <List>
                 <Item >Donations</Item>
                 <Item >Conversations about how you might be able to partner with us</Item>
@@ -94,12 +94,7 @@ const DonateSection = ({ row, col }) => {
                 selectOptions={data.charityJson.currencyOptions}
                 selectOnUpdate={value => handleFormData(value, 'currency')}
               />
-              <RadioGroup
-                name="radioGroup"
-                value={state.policy}
-                items={data.charityJson.paymentPolicy}
-                onUpdate={value => handleFormData(value, 'policy')}
-              />
+
               <PayPalButton
                 amount={state.price}
                 currency="AUD"

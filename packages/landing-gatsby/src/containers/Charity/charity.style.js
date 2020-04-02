@@ -166,7 +166,7 @@ const CharityWrapper = styled.div`
       display: block;
       height: 100%;
       position: absolute;
-      background: linear-gradient(rgba(255, 255, 255, 100), rgba(255, 255, 255, 100));
+      background: white;
       right: 0;
       top: 0;
       z-index: -1;
@@ -177,7 +177,8 @@ const CharityWrapper = styled.div`
         width: calc(100% - 500px);
       }
       @media only screen and (max-width: 991px) {
-        display: none;
+        width: calc(100% - 300px);
+
       }
     }
   }

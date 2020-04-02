@@ -57,7 +57,21 @@ export const MenuWrapper = styled.div`
     }
     &:hover {
       color: ${themeGet('colors.secondary', '#1B4FF1')};
+
     }
+    @media only screen and (max-width: 600px) {
+      font-size: 12px;
+      margin-right: 16px;
+      align-items: start;
+      button {
+        display:none;
+      }
+      }
+      &:hover {
+        color: ${themeGet('colors.secondary', '#1B4FF1')};
+  
+      }
+      
   }
 `;
 
@@ -65,7 +79,7 @@ export const Button = styled.button`
   border: 0;
   padding: 0;
   min-width: 150px;
-  min-height: 75px;
+  min-height: 50px;
   display: flex;  
   align-items: center;
   justify-content: center;
