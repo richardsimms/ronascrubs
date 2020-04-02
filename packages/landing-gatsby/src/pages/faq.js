@@ -6,13 +6,8 @@ import { ResetCSS } from 'common/src/assets/css/style';
 // import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import Navbar from '../containers/Charity/Navbar';
 // import DrawerSection from '../containers/Charity/DrawerSection';
-import BannerSection from '../containers/Charity/BannerSection';
-import WorkSection from '../containers/Charity/WorkSection';
-import HumanityBlock from '../containers/Charity/HumanityBlock';
-import PromotionBlock from '../containers/Charity/PromotionBlock';
-
-import DonateSection from '../containers/Charity/DonateSection';
-
+import Spacer from '../containers/Charity/Spacer';
+import FAQSection from '../containers/Charity/FAQSection';
 import Footer from '../containers/Charity/Footer';
 import {
   GlobalStyle,
@@ -25,7 +20,7 @@ export default () => {
   return (
     <ThemeProvider theme={charityTheme}>
       <Fragment>
-        <SEO title="Rona Scrubs" />
+        <SEO title="FAQs" />
         <ResetCSS />
         <GlobalStyle />
         {/* Start charity wrapper section */}
@@ -34,12 +29,8 @@ export default () => {
             <Navbar />
           </Sticky>
           <ContentWrapper>
-            <BannerSection />
-            <WorkSection />
-            <HumanityBlock />
-            <PromotionBlock />
-            <DonateSection />
-            
+          <Spacer />
+          <FAQSection />
           </ContentWrapper>
           <Footer />
         </CharityWrapper>

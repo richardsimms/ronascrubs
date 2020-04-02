@@ -24,7 +24,7 @@ const SectionWrapper = styled.div`
 `;
 
 export const ImageSlider = styled.div`
-  max-width: 524px;
+  max-width: 544px;
   width: 100%;
   height: 30px;
   display: flex;
@@ -82,7 +82,7 @@ export const ImageSlide = styled.div`
     }
 
     &:hover {
-      filter: brightness(0.3);
+      filter: brightness(1);
     }
   }
 `;

@@ -7,13 +7,16 @@ import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 import InputGroup from 'common/src/components/InputGroup';
 import RadioGroup from 'common/src/components/RadioGroup';
+import { PayPalButton } from "react-paypal-button-v2";
 import SectionWrapper, {
   ContentArea,
   Heading,
   ButtonGroup,
   DonationForm,
   DonateButton,
-} from './donateSection.style';
+  List,
+  Item,
+ } from './donateSection.style';
 
 import heartImage from 'common/src/assets/image/charity/heart-alt.svg';
 
@@ -38,7 +41,7 @@ const DonateSection = ({ row, col }) => {
 
   const [state, setState] = useState({
     price: '',
-    currency: 'usd',
+    currency: 'aud',
     policy: 'oneTime',
   });
 
@@ -66,10 +69,17 @@ const DonateSection = ({ row, col }) => {
           <Box className="col" {...col}>
             <ContentArea>
               <Heading>
-                Would You like to <span>Help</span> our medical hero's
+              HELP US <span>SUPPORT</span> OUR HEALTHCARE HEROES
               </Heading>
-              <Text content="Some secondary text" />
-             
+              <Text content="To help us get scrubs to as many of our healthcare heroes as possible, we would be very grateful for any support you can offer." />
+              <Text content="We welcome:" />
+              <List>
+                <Item >Donations</Item>
+                <Item >Conversations about how you might be able to partner with us</Item>
+                <Item >Offers to volunteer other helpful services and skills that aren’t sewing</Item>
+                <Item >For non-monetary offers of support please email us at <a href="mailto:info@ronascrubs.com" >info@ronascrubs.com</a></Item>
+              </List>
+
             </ContentArea>
           </Box>
 
@@ -77,10 +87,10 @@ const DonateSection = ({ row, col }) => {
             <DonationForm onSubmit={e => handleDonation(e)}>
               <InputGroup
                 inputType="number"
-                placeholder="100.00"
+                placeholder="20.00"
                 inputValue={state.price}
                 inputOnChange={e => handleFormData(e.target.value, 'price')}
-                currency="$ USD"
+                currency="$ AUD"
                 selectedValue={state.currency}
                 selectOptions={data.charityJson.currencyOptions}
                 selectOnUpdate={value => handleFormData(value, 'currency')}
@@ -91,9 +101,22 @@ const DonateSection = ({ row, col }) => {
                 items={data.charityJson.paymentPolicy}
                 onUpdate={value => handleFormData(value, 'policy')}
               />
-              <DonateButton type="submit">
-                Donate Now <Image src={heartImage} alt="Charity Landing" />
-              </DonateButton>
+              <PayPalButton
+                amount="60.00"
+                currency_code="USD"
+                shippingPreference="NO_SHIPPING" 
+                onSuccess={(details, data) => {
+                  alert("Transaction completed by " + details.payer.name.given_name);
+        
+                  // OPTIONAL: Call your server to save the transaction
+                  return fetch("/paypal-transaction-complete", {
+                    method: "post",
+                    body: JSON.stringify({
+                      orderID: data.orderID
+                    })
+                  });
+                }}
+              />
             </DonationForm>
           </Box>
         </Box>

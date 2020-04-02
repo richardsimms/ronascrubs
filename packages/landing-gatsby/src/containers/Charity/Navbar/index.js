@@ -23,6 +23,9 @@ const Navbar = () => {
           <Link  to="/about"  title="About Rona Scrubs">
             About
           </Link>
+          <Link  to="/faq"  title="FAQs">
+            FAQs
+          </Link>
          
         </MenuWrapper>
       </Container>

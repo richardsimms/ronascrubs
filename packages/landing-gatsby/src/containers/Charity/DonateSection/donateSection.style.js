@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
-import mapImage from 'common/src/assets/image/charity/map-alt.png';
+//import mapImage from 'common/src/assets/image/charity/map-alt.png';
 
 const SectionWrapper = styled.div`
   width: 100%;
   padding: 130px 0 100px;
   margin: 81px 0;
-  background-color: ${themeGet('colors.heading', '#060F1E')};
-  background-image: url(${mapImage});
+  background-color: #637A37;
+  
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -96,7 +96,8 @@ export const Heading = styled.h2`
   }
 
   span {
-    color: ${themeGet('color.primary', '#FCF22B')};
+    color: ${themeGet('color.primary', '#F9DBD3')};
+    font-weight: 600;
   }
 `;
 
@@ -381,6 +382,44 @@ export const DonateButton = styled.button`
       opacity: 0.2;
       visibility: visible;
     }
+  }
+`;
+export const List = styled.ul`
+  margin-bottom: 50px;
+  padding-top: 5px;
+  @media only screen and (max-width: 1440px) {
+    padding-top: 0;
+    margin-bottom: 45px;
+  }
+  @media only screen and (max-width: 1360px) {
+    margin-bottom: 40px;
+  }
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+`;
+
+export const Item = styled.li`
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px 0;
+  list-style-type:disc;
+  margin-left: 18px;
+  color: ${themeGet('colors.white', '#fff')};
+  a {
+    color:#F9DBD3;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 1440px) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  @media only screen and (max-width: 1360px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media only screen and (max-width: 991px) {
+
   }
 `;
 

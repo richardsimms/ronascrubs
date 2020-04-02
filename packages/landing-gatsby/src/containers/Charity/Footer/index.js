@@ -43,11 +43,14 @@ const Footer = ({ row, col, colOne, colTwo }) => {
               <Image src={LogoImage} alt="Charity" />
             </Link>
             <Link to="/about">
-            <Text className="text" content="About" />
-              </Link>
+              <Text className="text" content="About" />
+            </Link>
+            <Link to="/faq">
+              <Text className="text" content="FAQs" />
+            </Link>
             <Link to="/privacy">
-            <Text className="text" content="Privacy Policy" />
-             </Link>
+              <Text className="text" content="Privacy Policy" />
+            </Link>
             
             <a
               aria-label="go to mail"
@@ -90,9 +93,12 @@ const Footer = ({ row, col, colOne, colTwo }) => {
               className="text"
               content="© 2020 Rona Scrubs. All Rights Reserved"
             />
-            
+               <Text 
+              className="text"
+              content="ABN: 123456789"
+            />         
           </CopyrightText>
-        
+          
           <SocialList>
             <li className="facebook">
               <a

@@ -71,6 +71,9 @@ const FooterWrapper = styled.footer`
     align-items: center;
     justify-content: space-between;
     padding-top: 156px;
+    p {
+      padding-right: 40px;
+    }
     @media only screen and (max-width: 1360px) {
       padding-top: 125px;
     }

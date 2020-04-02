@@ -253,29 +253,13 @@
       "title": "One Time",
       "value": "oneTime",
       "text": "One Time donation given"
-    },
-    {
-      "id": 2,
-      "title": "Ongoing",
-      "value": "ongoing",
-      "text": "Everymonth donation given"
     }
   ],
   "currencyOptions": [
     {
       "id": 1,
-      "value": "usd",
-      "title": "$ USD"
-    },
-    {
-      "id": 2,
-      "value": "gbp",
-      "title": "£ GBP"
-    },
-    {
-      "id": 3,
-      "value": "cny",
-      "title": "¥ CNY"
+      "value": "aud",
+      "title": "$ AUD"
     }
   ],
   "posts": [
@@ -300,32 +284,26 @@
     {
       "id": 1,
       "logo": "../../assets/image/charity/clients/1.png",
-      "name": "Spotlight",
-      "to": "https://www.spotlightstores.com"
+      "name": "Acenre",
+      "link": "https://www.acendre.com/"
     },
     {
       "id": 2,
       "logo": "../../assets/image/charity/clients/2.png",
-      "name": "Acendre",
-      "to": "https://www.acendre.com"
+      "name": "Russell Kennedy",
+      "link": "https://www.russellkennedy.com.au/"
     },
     {
       "id": 3,
       "logo": "../../assets/image/charity/clients/3.png",
-      "name": "Russell Kennedy",
-      "link": "https://www.russellkennedy.com.au"
+      "name": "Spotlight",
+      "link": "https://www.spotlightstores.com/"
     },
     {
       "id": 4,
       "logo": "../../assets/image/charity/clients/4.png",
-      "name": "Xero",
-      "link": "https://www.xero.com/au/"
-    },
-    {
-      "id": 5,
-      "logo": "../../assets/image/charity/clients/5.png",
-      "name": "Moore Stephens",
-      "link": "#5"
+      "name": "Microsoft",
+      "link": "https://www.microsoft.com/"
     }
   ],
   "menuWidgets": [
