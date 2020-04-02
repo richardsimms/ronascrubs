@@ -40,8 +40,8 @@ const DonateSection = ({ row, col }) => {
   `);
 
   const [state, setState] = useState({
-    price: '',
-    currency: 'aud',
+    price: '20.00',
+    currency: 'AUD',
     policy: 'oneTime',
   });
 
@@ -54,7 +54,7 @@ const DonateSection = ({ row, col }) => {
 
   const handleDonation = e => {
     e.preventDefault();
-    console.log('Donation form data: ', state);
+    console.log('Donation form data: ', e.target.value);
 
     setState({
       ...state,
@@ -87,10 +87,9 @@ const DonateSection = ({ row, col }) => {
             <DonationForm onSubmit={e => handleDonation(e)}>
               <InputGroup
                 inputType="number"
-                placeholder="20.00"
                 inputValue={state.price}
                 inputOnChange={e => handleFormData(e.target.value, 'price')}
-                currency="$ AUD"
+                currency="AUD"
                 selectedValue={state.currency}
                 selectOptions={data.charityJson.currencyOptions}
                 selectOnUpdate={value => handleFormData(value, 'currency')}
@@ -102,9 +101,10 @@ const DonateSection = ({ row, col }) => {
                 onUpdate={value => handleFormData(value, 'policy')}
               />
               <PayPalButton
-                amount="60.00"
-                currency_code="USD"
-                shippingPreference="NO_SHIPPING" 
+                amount={state.price}
+                currency="AUD"
+                shippingPreference="NO_SHIPPING"
+                options={{clientId: "sb", currency: "AUD"}}
                 onSuccess={(details, data) => {
                   alert("Transaction completed by " + details.payer.name.given_name);
         
@@ -116,6 +116,7 @@ const DonateSection = ({ row, col }) => {
                     })
                   });
                 }}
+
               />
             </DonationForm>
           </Box>
