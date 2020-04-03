@@ -29,14 +29,14 @@ const Navbar = () => {
           <Link  to="/faq"  title="FAQs">
             FAQs
           </Link>
-          {/* 
+          
           <AnchorLink to="/#donate" title="Donate">
             <Button>
               <span className="text">DONATE</span>
               <Image src={heartImage} alt="Charity Landing" />
             </Button>
           </AnchorLink> 
-          */}
+          
         </MenuWrapper>
       </Container>
     </NavbarWrapper>

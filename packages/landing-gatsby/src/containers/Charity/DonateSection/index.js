@@ -99,7 +99,7 @@ const DonateSection = ({ row, col }) => {
                 amount={state.price}
                 currency="AUD"
                 shippingPreference="NO_SHIPPING"
-                options={{clientId: "sb", currency: "AUD"}}
+                options={{clientId: "ARkztSCUx913BuBxreR7LlK3GiL29wc4tVRQD_ShPFzlINZpP4l1U1kFUzFXCIbhkM67_UNyZHSQkVLU", currency: "AUD"}}
                 onSuccess={(details, data) => {
                   alert("Transaction completed by " + details.payer.name.given_name);
         

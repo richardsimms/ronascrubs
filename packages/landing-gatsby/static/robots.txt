@@ -1,2 +1,7 @@
 User-agent: *
-Allow: /
+allow: /
+disallow: /hereo-success
+disallow: /angel-success
+noindex: /hereo-success
+noindex: /angel-success
+
