@@ -98,7 +98,6 @@ const AngelFormSection = () => {
                 handleSubmit,
                 handleReset,
               } = props;
-              console.log(isSubmitting);
               return (
                 <form onSubmit={handleSubmit} method="post">
                   <Input

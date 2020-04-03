@@ -139,6 +139,11 @@ const HeroFormSection = () => {
                     name="first_name"
                     label="First name"
                     onChange={handleChange}
+                    className={
+                      errors.first_name && touched.first_name
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="first_name"
@@ -151,6 +156,11 @@ const HeroFormSection = () => {
                     name="last_name"
                     label="Last name"
                     onChange={handleChange}
+                    className={
+                      errors.last_name && touched.last_name
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="last_name"
@@ -163,6 +173,11 @@ const HeroFormSection = () => {
                     name="email"
                     label="Email"
                     onChange={handleChange}
+                    className={
+                      errors.email && touched.email
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="email"
@@ -175,6 +190,11 @@ const HeroFormSection = () => {
                     label="Phone number"
                     name="phone"
                     onChange={handleChange}
+                    className={
+                      errors.phone && touched.phone
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="phone"
@@ -187,6 +207,11 @@ const HeroFormSection = () => {
                     name="org"
                     label="Place of employment"
                     onChange={handleChange}
+                    className={
+                      errors.org && touched.org
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="org"
@@ -225,6 +250,11 @@ const HeroFormSection = () => {
                     name="address_line_1"
                     label="Address line 1"
                     onChange={handleChange}
+                    className={
+                      errors.address_line_1 && touched.address_line_1
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="address_line_1"
@@ -242,6 +272,11 @@ const HeroFormSection = () => {
                     name="suburb"
                     label="Suburb"
                     onChange={handleChange}
+                    className={
+                      errors.suburb && touched.suburb
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="suburb"
@@ -254,6 +289,11 @@ const HeroFormSection = () => {
                     name="state"
                     label="State"
                     onChange={handleChange}
+                    className={
+                      errors.state && touched.state
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="state"
@@ -266,6 +306,11 @@ const HeroFormSection = () => {
                     name="post_code"
                     label="Postcode"
                     onChange={handleChange}
+                    className={
+                      errors.post_code && touched.post_code
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="post_code"
@@ -309,6 +354,11 @@ const HeroFormSection = () => {
                     onChange={handleChange}
                     name="leg_length"
                     label="Inside leg length (cm)"
+                    className={
+                      errors.leg_length && touched.leg_length
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   />
                   <ErrorMessage
                     name="leg_length"
@@ -318,9 +368,14 @@ const HeroFormSection = () => {
 
                   <Input
                     inputType="number"
-                    onChange={handleChange}
                     name="quantity"
                     label="Quantity"
+                    onChange={handleChange}
+                    className={
+                      errors.quantity && touched.quantity
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
                   ></Input>
                   <ErrorMessage
                     name="quantity"
