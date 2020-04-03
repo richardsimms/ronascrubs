@@ -17,7 +17,7 @@ const hereoSuccess = () => (
   <>
     <ThemeProvider theme={charityTheme}>
       <Fragment>
-        <SEO title="Order complete" />
+        <SEO title="Donation complete" />
         <ResetCSS />
         <GlobalStyle />
         {/* Start charity wrapper section */}
