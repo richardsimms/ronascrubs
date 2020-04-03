@@ -50,6 +50,7 @@ const HeroFormSection = () => {
               first_name: '',
               last_name: '',
               email: '',
+              phone: '',
               org: '',
               org_role: '',
               org_role_other: '',
@@ -96,6 +97,9 @@ const HeroFormSection = () => {
               email: Yup.string()
                 .email('Invalid email address')
                 .required('Email-Address required'),
+              phone: Yup.string()
+                .max(50, 'Must be 50 characters or less')
+                .required('Phone required'),
               org: Yup.string().required('Place of employment required'),
               org_role: Yup.string().required('Current role required'),
               address_line_1: Yup.string().required('Address Line 1 required'),
@@ -159,6 +163,18 @@ const HeroFormSection = () => {
                   ></Input>
                   <ErrorMessage
                     name="email"
+                    className="error-message"
+                    component="div"
+                  />
+
+                  <Input
+                    inputType="text"
+                    label="Phone number"
+                    name="phone"
+                    onChange={handleChange}
+                  ></Input>
+                  <ErrorMessage
+                    name="phone"
                     className="error-message"
                     component="div"
                   />
