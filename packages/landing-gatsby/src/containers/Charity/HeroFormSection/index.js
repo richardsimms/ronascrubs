@@ -121,6 +121,7 @@ const HeroFormSection = () => {
               const {
                 values,
                 touched,
+                isValid,
                 errors,
                 dirty,
                 isSubmitting,
@@ -326,9 +327,13 @@ const HeroFormSection = () => {
                     className="error-message"
                     component="div"
                   />
-
                   <br />
                   <Button colors="primaryWithBg" type="submit" title="Submit" />
+                  {!isValid && (
+                    <div className="error-message">
+                      There are errors in the form. Please review.
+                    </div>
+                  )}
                 </form>
               );
             }}
