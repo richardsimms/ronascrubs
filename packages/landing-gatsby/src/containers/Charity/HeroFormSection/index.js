@@ -328,7 +328,12 @@ const HeroFormSection = () => {
                     component="div"
                   />
                   <br />
-                  <Button colors="primaryWithBg" type="submit" title="Submit" />
+                  <Button
+                    disabled={isSubmitting}
+                    colors="primaryWithBg"
+                    type="submit"
+                    title="Submit"
+                  />
                   {!isValid && (
                     <div className="error-message">
                       There are errors in the form. Please review.

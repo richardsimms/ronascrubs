@@ -79,7 +79,10 @@ const AngelFormSection = () => {
               address_line_1: Yup.string().required('Address Line 1 required'),
               suburb: Yup.string().required('Suburb required'),
               state: Yup.string().required('State required'),
-              post_code: Yup.string().required('Post Code required'),
+              post_code: Yup.string()
+                .required('Post Code required')
+                .max(4, 'Post code must be 4 characters')
+                .min(4, 'Post code must be 4 characters'),
             })}
           >
             {props => {
@@ -95,6 +98,7 @@ const AngelFormSection = () => {
                 handleSubmit,
                 handleReset,
               } = props;
+              console.log(isSubmitting);
               return (
                 <form onSubmit={handleSubmit} method="post">
                   <Input
@@ -233,7 +237,12 @@ const AngelFormSection = () => {
                     component="div"
                   />
                   <br />
-                  <Button colors="primaryWithBg" type="submit" title="Submit" />
+                  <Button
+                    disabled={isSubmitting}
+                    colors="primaryWithBg"
+                    type="submit"
+                    title="Submit"
+                  />
                   {!isValid && (
                     <div className="error-message">
                       There are errors in the form. Please review.
