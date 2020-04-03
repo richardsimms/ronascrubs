@@ -3,7 +3,7 @@ module.exports = {
     title: ` A not for profit organisation creating scrubs for our healthcare staff`,
     description: `Our mission is to provide a new way of giving back to our medical heroes, and the wider community, during the COVID-19 pandemic.`,
     author: `Rona Scrubs`,
-    siteUrl: `https://www.ronascrubs.com`
+    siteUrl: `https://ronascrubs.com`,
   },
   plugins: [
     {

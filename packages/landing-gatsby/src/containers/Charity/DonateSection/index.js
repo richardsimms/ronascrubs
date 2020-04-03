@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, navigate } from 'gatsby';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
 import Image from 'common/src/components/Image';
@@ -101,8 +101,8 @@ const DonateSection = ({ row, col }) => {
                 shippingPreference="NO_SHIPPING"
                 options={{clientId: "ARkztSCUx913BuBxreR7LlK3GiL29wc4tVRQD_ShPFzlINZpP4l1U1kFUzFXCIbhkM67_UNyZHSQkVLU", currency: "AUD"}}
                 onSuccess={(details, data) => {
-                  alert("Transaction completed by " + details.payer.name.given_name);
-        
+                  // alert("Thank you " + details.payer.name.given_name + " for your donation.");
+                  navigate('/paypal-success');
                   // OPTIONAL: Call your server to save the transaction
                   return fetch("/paypal-transaction-complete", {
                     method: "post",
