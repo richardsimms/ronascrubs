@@ -111,7 +111,9 @@ const HeroFormSection = () => {
                 .min(4, 'Post code must be 4 characters'),
               top_size: Yup.string().required('Top size required'),
               bottom_size: Yup.string().required('Bottom size required'),
-              leg_length: Yup.string().required('Inner leg length required'),
+              leg_length: Yup.number()
+                .required('Inner leg length required')
+                .integer('Inner leg length must be a whole number'),
               quantity: Yup.number().required('Quantity required'),
             })}
           >
@@ -119,6 +121,7 @@ const HeroFormSection = () => {
               const {
                 values,
                 touched,
+                isValid,
                 errors,
                 dirty,
                 isSubmitting,
@@ -324,9 +327,13 @@ const HeroFormSection = () => {
                     className="error-message"
                     component="div"
                   />
-
                   <br />
                   <Button colors="primaryWithBg" type="submit" title="Submit" />
+                  {!isValid && (
+                    <div className="error-message">
+                      There are errors in the form. Please review.
+                    </div>
+                  )}
                 </form>
               );
             }}

@@ -89,6 +89,7 @@ const AngelFormSection = () => {
                 errors,
                 dirty,
                 isSubmitting,
+                isValid,
                 handleChange,
                 handleBlur,
                 handleSubmit,
@@ -233,6 +234,11 @@ const AngelFormSection = () => {
                   />
                   <br />
                   <Button colors="primaryWithBg" type="submit" title="Submit" />
+                  {!isValid && (
+                    <div className="error-message">
+                      There are errors in the form. Please review.
+                    </div>
+                  )}
                 </form>
               );
             }}
