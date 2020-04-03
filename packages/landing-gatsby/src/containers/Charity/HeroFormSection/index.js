@@ -111,7 +111,9 @@ const HeroFormSection = () => {
                 .min(4, 'Post code must be 4 characters'),
               top_size: Yup.string().required('Top size required'),
               bottom_size: Yup.string().required('Bottom size required'),
-              leg_length: Yup.string().required('Inner leg length required'),
+              leg_length: Yup.number()
+                .required('Inner leg length required')
+                .integer('Inner leg length must be a whole number'),
               quantity: Yup.number().required('Quantity required'),
             })}
           >
