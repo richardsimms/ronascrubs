@@ -69,7 +69,7 @@ const DonateSection = ({ row, col }) => {
           <Box className="col" {...col}>
             <ContentArea>
               <Heading>
-              HELP US <span>SUPPORT</span> OUR HEALTHCARE HEROES
+              HELP US SUPPORT OUR HEALTHCARE HEROES
               </Heading>
               <Text content="To help us get scrubs to as many of our healthcare heroes as possible, we would be very grateful for any support you can offer." />
               <Text fontWeight="800" content="We welcome:" />
@@ -77,8 +77,8 @@ const DonateSection = ({ row, col }) => {
                 <Item >Donations</Item>
                 <Item >Conversations about how you might be able to partner with us</Item>
                 <Item >Offers to volunteer other helpful services and skills that aren’t sewing</Item>
-                <Item >For non-monetary offers of support please email us at <a href="mailto:info@ronascrubs.com" >info@ronascrubs.com</a></Item>
               </List>
+              <p>For non-monetary offers of support please email us at <a href="mailto:info@ronascrubs.com" >info@ronascrubs.com</a></p>
 
             </ContentArea>
           </Box>

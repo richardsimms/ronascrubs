@@ -6,7 +6,7 @@ const SectionWrapper = styled.div`
   width: 100%;
   padding: 130px 0 100px;
   margin: 81px 0;
-  background-color: #697B46;
+  background-color: #1338AB;
   
   background-repeat: no-repeat;
   background-size: contain;
@@ -57,6 +57,10 @@ export const ContentArea = styled.div`
   > p {
     color: ${themeGet('colors.white', '#ffffff')};
     font-size: 18px;
+    a {
+      color:#FFF;
+      font-weight: 600;
+    }
     @media only screen and (max-width: 1440px) {
       font-size: 16px;
     }
@@ -433,7 +437,7 @@ export const Item = styled.li`
   margin-left: 18px;
   color: ${themeGet('colors.white', '#fff')};
   a {
-    color:#F9DBD3;
+    color:#FFF;
     font-weight: 600;
   }
   @media only screen and (max-width: 1440px) {
