@@ -24,8 +24,8 @@ const FundraiserSection = () => {
           <TextWrapper>
             <Heading as="h3" content="Content"  />
           <List >
-            <Item><AnchorLink className="AnchorLink" to="/faq#volunteer"  title="Volunteer" >Volunteer</AnchorLink></Item>
-            <Item><AnchorLink className="AnchorLink" to="/faq#healthcare"  title="Healthcare" >Healthcare</AnchorLink></Item>
+            <Item><AnchorLink className="AnchorLink" to="/faq#volunteer"  title="Volunteer" >Volunteer Sewing Angels</AnchorLink></Item>
+            <Item><AnchorLink className="AnchorLink" to="/faq#healthcare"  title="Healthcare" >Healthcare Worker Heroes</AnchorLink></Item>
             <Item><AnchorLink className="AnchorLink" to="/faq#donations"  title="Donations" >Donations</AnchorLink></Item>
             <Item><AnchorLink className="AnchorLink" to="/faq#general"  title="General" >General</AnchorLink></Item>
           </List>
