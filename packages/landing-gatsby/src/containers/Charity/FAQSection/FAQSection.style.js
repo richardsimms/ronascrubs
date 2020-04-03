@@ -5,6 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const SectionWrapper = styled.section`
   width: 100%;
   padding: 81px 0;
+
   @media only screen and (max-width: 1440px) {
     padding: 70px 0;
   }
@@ -14,6 +15,7 @@ const SectionWrapper = styled.section`
   @media only screen and (max-width: 991px) {
     padding: 40px 0;
   }
+
 `;
 
 export const SectionHeader = styled.header`
@@ -360,43 +362,49 @@ export const ShareList = styled.ul`
   }
 `;
 
+
 export const Item = styled.li`
-  margin-right: 30px;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px 0;
+  list-style-type:decimal;
+  margin-left: 18px;
   color: ${themeGet('colors.heading', '#060F1E')};
+  a {
+    color: ${themeGet('colors.secondary', '#D50032')};
+    font-weight: 600;
+  }
+  .AnchorLink {
+    color: ${themeGet('colors.secondary', '#D50032')};
+    font-weight: 600;
+  }
   @media only screen and (max-width: 1440px) {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 27px;
   }
   @media only screen and (max-width: 1360px) {
-    font-size: 15px;
-    margin-right: 25px;
+    font-size: 16px;
+    line-height: 24px;
   }
+  @media only screen and (max-width: 991px) {
 
-  &:last-child {
-    margin-right: 0;
-  }
-
-  svg {
-    width: 20px;
-    fill: ${themeGet('colors.heading', '#060F1E')};
-    transition: all 0.3s ease;
-  }
-
-  a {
-    &:hover {
-      &.twitter {
-        svg {
-          fill: ${themeGet('colors.twitter', '#38A1F3')};
-        }
-      }
-      &.facebook {
-        svg {
-          fill: ${themeGet('colors.facebook', '#38A1F3')};
-        }
-      }
-    }
   }
 `;
+export const List = styled.ol`
+  margin-bottom: 50px;
+  padding-top: 5px;
+  @media only screen and (max-width: 1440px) {
+    padding-top: 0;
+    margin-bottom: 45px;
+  }
+  @media only screen and (max-width: 1360px) {
+    margin-bottom: 40px;
+  }
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+`;
+
+
 
 export default SectionWrapper;

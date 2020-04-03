@@ -6,7 +6,7 @@ const SectionWrapper = styled.div`
   width: 100%;
   padding: 130px 0 100px;
   margin: 81px 0;
-  background-color: #1338AB;
+  background-color: #398064;
   
   background-repeat: no-repeat;
   background-size: contain;
