@@ -367,7 +367,7 @@ export const Item = styled.li`
   font-size: 18px;
   line-height: 28px;
   padding: 10px 0;
-  list-style-type:decimal;
+  list-style-type:1|a|A|i|I;
   margin-left: 18px;
   color: ${themeGet('colors.heading', '#060F1E')};
   a {

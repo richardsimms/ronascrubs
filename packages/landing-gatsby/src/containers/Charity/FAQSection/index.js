@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'common/src/components/UI/Container';
 import Heading from 'common/src/components/Heading';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import { Link } from 'gatsby';
 
 import SectionWrapper, {
   SectionHeader,
@@ -72,7 +73,7 @@ const FundraiserSection = () => {
               </List>
             <Heading as="h3" content="Donations" id="donations" />
               <List>
-                <Item ><b>How do I donate?</b> -  The easiest way to donate to Rona Scrubs is to click the Donate(hyperlink) button on the website. You can also donate directly from your Paypal account (if you have one) by using this email address - <a href="mailto:info@ronascrubs.com">info@ronascrubs.com</a>.</Item>
+                <Item ><b>How do I donate?</b> -  The easiest way to donate to Rona Scrubs is to click the <Link to="/#donate">Donate</Link> button on the website. You can also donate directly from your Paypal account (if you have one) by using this email address - <a href="mailto:info@ronascrubs.com">info@ronascrubs.com</a>.</Item>
                 <Item ><b>What will my donation be used for?</b> - donations will be used to help get supplies to our sewing Angels and then get the finished scrubs to healthcare worker Heroes. They may also be used to purchase any additional items we might need to fill orders where we have not received a donation of goods or where we are running low. Examples include fabric, thread, and patterns. </Item>
                 <Item ><b>Can I claim a tax deduction for my donation?</b> – we are in the process of applying for Deductible Gift Recipient status. This typically takes up to 4 weeks, so keep your receipt, and we will advise here on the website when we have DGR status.</Item>
               </List>
