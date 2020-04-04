@@ -117,7 +117,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-fullstory`,
       options: {
-        fs_org: T6TZZ,
+        fs_org: 'T6TZZ',
       },
     },
     {
