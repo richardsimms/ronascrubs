@@ -97,6 +97,7 @@ const AngelFormSection = () => {
                 handleBlur,
                 handleSubmit,
                 handleReset,
+                submitCount,
               } = props;
               return (
                 <form onSubmit={handleSubmit} method="post">
@@ -242,7 +243,7 @@ const AngelFormSection = () => {
                     type="submit"
                     title="Submit"
                   />
-                  {!isValid && (
+                  {!isValid && submitCount > 0 && (
                     <div className="error-message">
                       There are errors in the form. Please review.
                     </div>

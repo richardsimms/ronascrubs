@@ -131,6 +131,7 @@ const HeroFormSection = () => {
                 handleSubmit,
                 setFieldValue,
                 setFieldTouched,
+                submitCount,
                 handleReset,
               } = props;
               return (
@@ -390,7 +391,7 @@ const HeroFormSection = () => {
                     type="submit"
                     title="Submit"
                   />
-                  {!isValid && (
+                  {!isValid && submitCount > 0 && (
                     <div className="error-message">
                       There are errors in the form. Please review.
                     </div>
