@@ -24,6 +24,7 @@ const roleOptions = [
 ];
 
 const sizeOptions = [
+  { value: 'xxs', label: 'XXS' },
   { value: 'xs', label: 'XS' },
   { value: 's', label: 'S' },
   { value: 'm', label: 'M' },
