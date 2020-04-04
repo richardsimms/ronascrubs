@@ -115,6 +115,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-fullstory`,
+      options: {
+        fs_org: T6TZZ,
+      },
+    },
+    {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -100
