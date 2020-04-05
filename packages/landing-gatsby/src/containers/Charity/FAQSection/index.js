@@ -2,8 +2,7 @@ import React from 'react';
 import Container from 'common/src/components/UI/Container';
 import Heading from 'common/src/components/Heading';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
-import { Link } from 'gatsby';
-
+≈
 import SectionWrapper, {
   SectionHeader,
   ContentArea,
@@ -56,7 +55,7 @@ const FundraiserSection = () => {
                 <Item ><b>Help me and my patients feel happy with cheerful fabric</b> – we are delighted to have received some fun patterns and different colours from Spotlight and will do our best to continue selecting these as we order more, though given the fabric is donated we do not always have a wide variety of options. </Item>
                 <Item ><b>Does anything preclude me from wearing these scrubs in my workplace?</b> - we have had no objection from Australian infection control bodies prohibiting the use of home-made scrubs at the workplace. All healthcare workers are instructed to wash the scrubs daily at 65 degrees Celsius if possible with your machine at home, or a cold wash followed by 15 minutes on the highest heat setting in the dryer. If a tumble dryer is not available, line dry scrubs in the sun. Alternatively, follow the instructions of your institution.</Item>
                 <Item ><b>Do I need to pay for these scrubs?</b> - the team at Rona Scrubs feel strongly that our Heroes do not have to pay for these scrubs, but you are welcome to make a donation if you wish.</Item>
-                <Item ><b>When will I receive my scrubs? - it is difficult to provide specific estimates o</b>n timing of delivery in the current climate and with progressive lockdowns, but we aim to have scrubs delivered to Heroes within 2 weeks of the order. Please note we are currently in pilot, so we will have more certainty around timeframes in the future.</Item>
+                <Item ><b>When will I receive my scrubs?</b> - it is difficult to provide specific estimates on timing of delivery in the current climate and with progressive lockdowns, but we aim to have scrubs delivered to Heroes within 2 weeks of the order. Please note we are currently in pilot, so we will have more certainty around timeframes in the future.</Item>
                 <Item ><b>Is there a limit to how many sets of scrubs I can order?</b> - in order to spread the Rona Scrubs love and help as many Heroes as we can, we ask you please to limit your order to 1-2 sets per person. At this stage, we cannot facilitate bulk orders for hospitals.</Item>
                 <Item ><b>How do I know that these scrubs aren't already contaminated?</b> - we are very clear with our distributors and sewing Angels about following specific laundering and packaging instructions to limit the spread of COVID-19. We advise you take all necessary precautions on receipt of your scrubs then wash them as per our laundering instructions prior to first wear (see question 6).</Item>
                 <Item ><b>Help me fix my order, there was an error</b> – please send us an email at <a href="mailto:info@ronascrubs.com">info@ronascrubs.com</a> and we will help rectify the issue. </Item>
