@@ -101,6 +101,7 @@ const Footer = ({ row, col, colOne, colTwo }) => {
               className="text"
               content="ACN: 640 077 676"
             />         
+             
           </CopyrightText>
           
           <SocialList>

@@ -283,25 +283,25 @@
   "clients": [
     {
       "id": 1,
-      "logo": "../../assets/image/charity/clients/1.png",
+      "logo": "../../assets/image/charity/clients/1.jpg",
       "name": "Acenre",
       "link": "https://www.acendre.com/"
     },
     {
       "id": 2,
-      "logo": "../../assets/image/charity/clients/2.png",
+      "logo": "../../assets/image/charity/clients/2.jpg",
       "name": "Russell Kennedy",
       "link": "https://www.russellkennedy.com.au/"
     },
     {
       "id": 3,
-      "logo": "../../assets/image/charity/clients/3.png",
+      "logo": "../../assets/image/charity/clients/3.jpg",
       "name": "Spotlight",
       "link": "https://www.spotlightstores.com/"
     },
     {
       "id": 4,
-      "logo": "../../assets/image/charity/clients/4.png",
+      "logo": "../../assets/image/charity/clients/4.jpg",
       "name": "Microsoft",
       "link": "https://www.microsoft.com/"
     }
