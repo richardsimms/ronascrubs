@@ -3,22 +3,17 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql, navigate } from 'gatsby';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
-import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 import InputGroup from 'common/src/components/InputGroup';
-import RadioGroup from 'common/src/components/RadioGroup';
 import { PayPalButton } from "react-paypal-button-v2";
 import SectionWrapper, {
   ContentArea,
   Heading,
-  ButtonGroup,
   DonationForm,
-  DonateButton,
   List,
   Item,
  } from './donateSection.style';
 
-import heartImage from 'common/src/assets/image/charity/heart-alt.svg';
 
 const DonateSection = ({ row, col }) => {
   const data = useStaticQuery(graphql`

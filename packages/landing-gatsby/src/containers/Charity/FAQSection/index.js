@@ -2,7 +2,9 @@ import React from 'react';
 import Container from 'common/src/components/UI/Container';
 import Heading from 'common/src/components/Heading';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
-≈
+import { Link } from 'gatsby';
+
+
 import SectionWrapper, {
   SectionHeader,
   ContentArea,
