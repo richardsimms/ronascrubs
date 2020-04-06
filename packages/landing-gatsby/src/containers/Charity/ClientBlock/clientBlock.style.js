@@ -33,7 +33,7 @@ export const ImageSlider = styled.div`
   overflow: hidden;
   position: relative;
   @media only screen and (max-width: 991px) {
-    max-width: 600px;
+    max-width: 530px;
   }
   @media only screen and (max-width: 767px) {
     width: calc(100% - 60px);
@@ -65,12 +65,12 @@ export const ImageSlider = styled.div`
 export const ImageSlide = styled.div`
   height: 30px;
   flex-shrink: 0;
-  animation: ${slideShow} 0s linear infinite;
+  animation: ${slideShow} 20s linear infinite;
 
   a {
     margin: 0 22px;
     transition: all 0.3s ease;
-    filter: brightness(0.85);
+    filter: grayscale(1) opacity(0.5);
 
     img {
       @media only screen and (max-width: 1360px) {
@@ -82,7 +82,7 @@ export const ImageSlide = styled.div`
     }
 
     &:hover {
-      filter: brightness(1);
+      filter: grayscale(0) opacity(1);
     }
   }
 `;

@@ -10,6 +10,7 @@ import BannerSection from '../containers/Charity/BannerSection';
 import WorkSection from '../containers/Charity/WorkSection';
 import HumanityBlock from '../containers/Charity/HumanityBlock';
 import PromotionBlock from '../containers/Charity/PromotionBlock';
+import ClientBlock from '../containers/Charity/ClientBlock';
 
 import DonateSection from '../containers/Charity/DonateSection';
 
@@ -39,6 +40,8 @@ export default () => {
             <HumanityBlock />
             <PromotionBlock />
             <DonateSection />
+            <ClientBlock />
+
           </ContentWrapper>
           <Footer />
         </CharityWrapper>

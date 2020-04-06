@@ -313,18 +313,18 @@
       "menu": [
         {
           "id": 1,
-          "text": "Spotlight",
-          "link": "https://www.spotlightstores.com"
-        },
-        {
-          "id": 2,
           "text": "Acendre",
           "link": "https://www.acendre.com"
         },
         {
-          "id": 3,
+          "id": 2,
           "text": "Russell Kennedy",
           "link": "https://www.russellkennedy.com.au"
+        },
+        {
+          "id": 3,
+          "text": "Spotlight",
+          "link": "https://www.spotlightstores.com"
         }
       ]
     }

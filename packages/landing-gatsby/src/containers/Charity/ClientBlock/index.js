@@ -12,7 +12,7 @@ const ClientBlock = () => {
           link
           logo {
             publicURL
-          }
+            }
           name
         }
       }
