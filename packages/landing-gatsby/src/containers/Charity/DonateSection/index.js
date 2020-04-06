@@ -40,7 +40,7 @@ const DonateSection = ({ row, col }) => {
   `);
 
   const [state, setState] = useState({
-    price: '20.00',
+    price: '50.00',
     currency: 'AUD',
     policy: 'oneTime',
   });
