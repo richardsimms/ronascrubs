@@ -34,6 +34,18 @@ const sizeOptions = [
   { value: 'xxxl', label: 'XXXL' },
 ];
 
+const sizeOptionsBottom = [
+  { value: 'none', label: 'Not Required' },
+  { value: 'xxs', label: 'XXS' },
+  { value: 'xs', label: 'XS' },
+  { value: 's', label: 'S' },
+  { value: 'm', label: 'M' },
+  { value: 'l', label: 'L' },
+  { value: 'xl', label: 'XL' },
+  { value: 'xxl', label: 'XXL' },
+  { value: 'xxxl', label: 'XXXL' },
+];
+
 const HeroFormSection = () => {
   return (
     <SectionWrapper id="angelform">
@@ -62,7 +74,7 @@ const HeroFormSection = () => {
               post_code: '',
               top_size: '',
               bottom_size: '',
-              leg_length: '',
+              leg_length: 80,
               quantity: '',
             }}
             onSubmit={(values, { setSubmitting }) => {
@@ -337,7 +349,7 @@ const HeroFormSection = () => {
                   />
 
                   <Select
-                    options={sizeOptions}
+                    options={sizeOptionsBottom}
                     name="bottom_size"
                     labelText="Scrub bottom size"
                     onChange={option =>
@@ -351,7 +363,7 @@ const HeroFormSection = () => {
                     component="div"
                   />
 
-                  <Input
+                  {/* <Input
                     inputType="number"
                     onChange={handleChange}
                     name="leg_length"
@@ -366,7 +378,7 @@ const HeroFormSection = () => {
                     name="leg_length"
                     className="error-message"
                     component="div"
-                  />
+                  /> */}
 
                   <Input
                     inputType="number"
