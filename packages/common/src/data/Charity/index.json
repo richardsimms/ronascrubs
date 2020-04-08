@@ -298,12 +298,6 @@
       "logo": "../../assets/image/charity/clients/3.jpg",
       "name": "Spotlight",
       "link": "https://www.spotlightstores.com/"
-    },
-    {
-      "id": 4,
-      "logo": "../../assets/image/charity/clients/4.jpg",
-      "name": "Microsoft",
-      "link": "https://www.microsoft.com/"
     }
   ],
   "menuWidgets": [
