@@ -49,7 +49,6 @@ const FundraiserSection = () => {
               </List>
             <Heading as="h3" content="Healthcare Worker Heroes" id="healthcare" />
               <List>
-                <Item ><b>Help me get the right length scrub pants</b> – with a measuring tape while standing straight-legged, we recommend measuring from the top of your inner thigh down to the top of your inner foot, then adding up to 10cm to allow the scrub pants to drape over your shoes.</Item>
                 <Item ><b>Help me find the right size</b> – the Simplicity #5443 pattern which we are predominantly using is very generous sizing. Depending on how loose you like your scrubs, we recommend you go down 1-2 sizes from what would normally wear, but bear in mind the cotton fabric will shrink with repeated hot washes. To assist you in finding the right size please see the <a href={chartSize} target="_blank" rel="noopener noreferrer">size guide.
                   </a></Item>
                 <Item ><b>Can I request customised scrubs for my hard-to-fit body shape?</b> – given the volume of scrubs our volunteer sewers are trying to make for healthcare workers, we cannot offer custom-sizing. If this is a real issue for you please email <a href="mailto:info@ronascrubs.com">info@ronascrubs.com</a> and we will do our best to accommodate your needs.</Item>
