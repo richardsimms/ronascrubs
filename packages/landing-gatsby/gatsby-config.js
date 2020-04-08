@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: ` A not for profit organisation creating scrubs for our healthcare staff`,
@@ -9,8 +13,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        sitemapSize: 5000
-      }
+        sitemapSize: 5000,
+      },
     },
     {
       resolve: `gatsby-plugin-styled-components`,
@@ -54,7 +58,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
-    },    
+    },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -111,7 +115,7 @@ module.exports = {
       resolve: `gatsby-plugin-hotjar`,
       options: {
         id: 1746281,
-        sv: 6
+        sv: 6,
       },
     },
     {
@@ -121,22 +125,22 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-anchor-links",
+      resolve: 'gatsby-plugin-anchor-links',
       options: {
-        offset: -100
-      }
+        offset: -100,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-56512737-7",
+        trackingId: 'UA-56512737-7',
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         // head: false,
         // Setting this parameter is optional
         anonymize: false,
         // Setting this parameter is also optional
-         respectDNT: true,
+        respectDNT: true,
         // Delays sending pageview hits on route update (in milliseconds)
         // pageTransitionDelay: 0,
         // Any additional optional fields
@@ -145,10 +149,9 @@ module.exports = {
         // cookieDomain: "ronascrubs.com",
       },
     },
-    
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-
   ],
 };
