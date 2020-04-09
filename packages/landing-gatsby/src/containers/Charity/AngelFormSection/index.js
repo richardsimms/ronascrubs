@@ -43,7 +43,7 @@ const AngelFormSection = () => {
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
                 const json = JSON.stringify(values, null, 2);
-                fetch(process.env.API_URL + '/API/Users/AngelSignUp', {
+                fetch(process.env.API_URL + '/API/SignUp/AngelSignUp', {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',

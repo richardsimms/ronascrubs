@@ -80,7 +80,7 @@ const HeroFormSection = () => {
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
                 const json = JSON.stringify(values, null, 2);
-                fetch(process.env.API_URL + '/API/Users/HeroSignUp', {
+                fetch(process.env.API_URL + '/API/SignUp/HeroSignUp', {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',
