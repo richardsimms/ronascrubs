@@ -21,7 +21,7 @@ const roleOptions = [
   { value: 'PCA', label: 'PCA' },
   { value: 'Clerical Staff', label: 'Clerical Staff' },
   { value: 'Midwife', label: 'Midwife' },
-{ value: 'Paramedic', label: 'Paramedic' },
+  { value: 'Paramedic', label: 'Paramedic' },
   { value: 'other', label: 'Other' },
 ];
 
