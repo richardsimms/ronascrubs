@@ -15,11 +15,13 @@ import SectionWrapper, {
 import chartSize from 'common/src/assets/image/charity/sizechart.jpeg';
 
 const roleOptions = [
-  { value: 'doctor', label: 'Doctor' },
-  { value: 'nurse', label: 'Nurse' },
-  { value: 'allied', label: 'Allied Health Staff' },
-  { value: 'pca', label: 'PCA' },
-  { value: 'clerical', label: 'Clerical Staff' },
+  { value: 'Doctor', label: 'Doctor' },
+  { value: 'Nurse', label: 'Nurse' },
+  { value: 'Allied Health Staff', label: 'Allied Health Staff' },
+  { value: 'PCA', label: 'PCA' },
+  { value: 'Clerical Staff', label: 'Clerical Staff' },
+  { value: 'Midwife', label: 'Midwife' },
+{ value: 'Paramedic', label: 'Paramedic' },
   { value: 'other', label: 'Other' },
 ];
 
@@ -335,6 +337,7 @@ const HeroFormSection = () => {
                   <a href={chartSize} target="_blank" rel="noopener noreferrer">
                     See the size guide to be certain you order the right size.
                   </a>
+                  <Text content="Please note we are unable to accommodate specific colour or pant length requests. For more information please see our FAQs" />
                   <Select
                     options={sizeOptions}
                     name="top_size"
