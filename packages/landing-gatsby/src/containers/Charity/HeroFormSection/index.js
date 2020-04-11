@@ -36,6 +36,17 @@ const sizeOptions = [
   { value: 'xxxl', label: 'XXXL' },
 ];
 
+const stateOptions = [
+  { value: 'ACT', label: 'ACT' },
+  { value: 'NSW', label: 'NSW' },
+  { value: 'NT', label: 'NT' },
+  { value: 'QLD', label: 'QLD' },
+  { value: 'SA', label: 'SA' },
+  { value: 'TAS', label: 'TAS' },
+  { value: 'VIC', label: 'VIC' },
+  { value: 'WA', label: 'WA' },
+];
+
 const sizeOptionsBottom = [
   { value: 'none', label: 'Not Required' },
   { value: 'xxs', label: 'XXS' },
@@ -300,17 +311,13 @@ const HeroFormSection = () => {
                     component="div"
                   />
 
-                  <Input
-                    inputType="text"
+                  <Select
+                    options={stateOptions}
                     name="state"
-                    label="State"
-                    onChange={handleChange}
-                    className={
-                      errors.state && touched.state
-                        ? 'text-input error'
-                        : 'text-input'
-                    }
-                  ></Input>
+                    labelText="State"
+                    onChange={option => setFieldValue('state', option.value)}
+                    onBlur={setFieldTouched}
+                  />
                   <ErrorMessage
                     name="state"
                     className="error-message"

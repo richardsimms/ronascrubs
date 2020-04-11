@@ -7,6 +7,7 @@ import { Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { navigate } from 'gatsby';
 import Input from 'common/src/components/Input';
+import Select from 'common/src/components/Select';
 import Button from 'common/src/components/Button';
 
 import SectionWrapper, {
@@ -15,6 +16,17 @@ import SectionWrapper, {
 } from './angelFormSection.style';
 //import fundraisersImage from 'common/src/assets/image/charity/fundraisers.jpg';
 //import missionImage from 'common/src/assets/image/charity/mission.jpg';
+
+const stateOptions = [
+  { value: 'ACT', label: 'ACT' },
+  { value: 'NSW', label: 'NSW' },
+  { value: 'NT', label: 'NT' },
+  { value: 'QLD', label: 'QLD' },
+  { value: 'SA', label: 'SA' },
+  { value: 'TAS', label: 'TAS' },
+  { value: 'VIC', label: 'VIC' },
+  { value: 'WA', label: 'WA' },
+];
 
 const AngelFormSection = () => {
   return (
@@ -96,6 +108,8 @@ const AngelFormSection = () => {
                 handleChange,
                 handleBlur,
                 handleSubmit,
+                setFieldValue,
+                setFieldTouched,
                 handleReset,
                 submitCount,
               } = props;
@@ -204,17 +218,13 @@ const AngelFormSection = () => {
                     className="error-message"
                     component="div"
                   />
-                  <Input
-                    inputType="text"
-                    label="State"
+                  <Select
+                    options={stateOptions}
                     name="state"
-                    onChange={handleChange}
-                    className={
-                      errors.state && touched.state
-                        ? 'text-input error'
-                        : 'text-input'
-                    }
-                  ></Input>
+                    labelText="State"
+                    onChange={option => setFieldValue('state', option.value)}
+                    onBlur={setFieldTouched}
+                  />
                   <ErrorMessage
                     name="state"
                     className="error-message"
