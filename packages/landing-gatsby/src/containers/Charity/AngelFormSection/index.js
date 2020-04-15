@@ -96,6 +96,7 @@ const AngelFormSection = () => {
               proficiency: '',
               fabric: '',
               pattern: '',
+              pattern_other: '',
               velocity: '',
               started: '',
             }}
@@ -308,7 +309,9 @@ const AngelFormSection = () => {
                   <br />
                   <label>Level of Sewing Experience</label>
                   <RadioGroup
-                    onUpdate={val => setFieldValue('proficiency', val)}
+                    onUpdate={val =>
+                      setFieldValue('proficiency', parseInt(val))
+                    }
                     items={skillOptions}
                   />
                   <ErrorMessage
