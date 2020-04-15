@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'common/src/components/UI/Container';
 import Heading from 'common/src/components/Heading';
 import Text from 'common/src/components/Text';
@@ -60,6 +60,7 @@ const sizeOptionsBottom = [
 ];
 
 const HeroFormSection = () => {
+  const [apiError, setApiError] = useState();
   return (
     <SectionWrapper id="angelform">
       <Container width="1260px">
@@ -105,10 +106,12 @@ const HeroFormSection = () => {
                     console.log(data);
                     if (data.success) {
                       navigate('/hereo-success');
+                    } else {
+                      setApiError(data);
                     }
                   })
                   .catch(error => {
-                    console.error(error);
+                    setApiError(error);
                   });
                 setSubmitting(false);
               }, 400);
@@ -418,6 +421,9 @@ const HeroFormSection = () => {
                       There are errors in the form. Please review.
                     </div>
                   )}
+                  <div className="error-message">
+                    {apiError && JSON.stringify(apiError)}
+                  </div>
                 </form>
               );
             }}
