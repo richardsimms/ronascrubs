@@ -2,15 +2,12 @@ import React, { useState } from 'react';
 import Container from 'common/src/components/UI/Container';
 import Heading from 'common/src/components/Heading';
 import Text from 'common/src/components/Text';
-// import Select from 'common/src/components/Select';
 import { Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { navigate } from 'gatsby';
 import Input from 'common/src/components/Input';
 import Select from 'common/src/components/Select';
 import Button from 'common/src/components/Button';
-import RadioGroup from 'common/src/components/RadioGroup';
-import Radio from 'common/src/components/Radio';
 
 import SectionWrapper, {
   SectionHeader,
@@ -31,7 +28,7 @@ const stateOptions = [
 ];
 
 const skillOptions = Array.from(Array(11).keys()).map(val => {
-  return { title: val.toString(), id: val, value: val.toString() };
+  return { value: val, label: val };
 });
 
 const yesNoOptions = [
@@ -308,13 +305,14 @@ const AngelFormSection = () => {
                     className="error-message"
                     component="div"
                   />
-                  <br />
-                  <label>Level of Sewing Experience</label>
-                  <RadioGroup
-                    onUpdate={val =>
-                      setFieldValue('proficiency', parseInt(val))
+                  <Select
+                    options={skillOptions}
+                    name="proficiency"
+                    labelText="Level of sewing experience"
+                    onChange={option =>
+                      setFieldValue('proficiency', option.value)
                     }
-                    items={skillOptions}
+                    onBlur={setFieldTouched}
                   />
                   <ErrorMessage
                     name="proficiency"
