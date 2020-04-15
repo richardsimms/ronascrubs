@@ -171,8 +171,6 @@ const AngelFormSection = () => {
                 submitCount,
               } = props;
 
-              console.log(values);
-
               return (
                 <form onSubmit={handleSubmit} method="post">
                   <Input
