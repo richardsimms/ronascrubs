@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'common/src/components/UI/Container';
 import Heading from 'common/src/components/Heading';
 import Text from 'common/src/components/Text';
@@ -71,6 +71,8 @@ const patternOptions = [
 ];
 
 const AngelFormSection = () => {
+  const [apiError, setApiError] = useState();
+
   return (
     <SectionWrapper id="angelform">
       <Container width="1260px">
@@ -115,10 +117,12 @@ const AngelFormSection = () => {
                     console.log('Success:', data);
                     if (data.success) {
                       navigate('/angel-success');
+                    } else {
+                      setApiError(data);
                     }
                   })
                   .catch(error => {
-                    console.error('Error:', error);
+                    setApiError(error);
                   });
                 setSubmitting(false);
               }, 400);
@@ -400,6 +404,9 @@ const AngelFormSection = () => {
                       There are errors in the form. Please review.
                     </div>
                   )}
+                  <div className="error-message">
+                    {apiError && JSON.stringify(apiError)}
+                  </div>
                 </form>
               );
             }}
