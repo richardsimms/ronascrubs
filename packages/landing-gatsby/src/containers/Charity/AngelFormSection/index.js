@@ -9,6 +9,8 @@ import { navigate } from 'gatsby';
 import Input from 'common/src/components/Input';
 import Select from 'common/src/components/Select';
 import Button from 'common/src/components/Button';
+import RadioGroup from 'common/src/components/RadioGroup';
+import Radio from 'common/src/components/Radio';
 
 import SectionWrapper, {
   SectionHeader,
@@ -26,6 +28,46 @@ const stateOptions = [
   { value: 'TAS', label: 'TAS' },
   { value: 'VIC', label: 'VIC' },
   { value: 'WA', label: 'WA' },
+];
+
+const skillOptions = Array.from(Array(11).keys()).map(val => {
+  return { title: val.toString(), id: val, value: val.toString() };
+});
+
+const yesNoOptions = [
+  { value: false, label: 'No' },
+  { value: true, label: 'Yes' },
+];
+
+const fabricOptions = [
+  { value: 'Ordered', label: 'No, but I’ve ordered some online' },
+  {
+    value: 'Need',
+    label:
+      'No, but I’d like to hear if you’re able to get more from your suppliers',
+  },
+  {
+    value: 'Have',
+    label:
+      'Yes (please check the fabric specifications in our FAQs on the website)',
+  },
+];
+
+const patternOptions = [
+  { value: 'Simplicity #5443 (S-L)', label: 'Simplicity #5443 (S-L)' },
+  { value: 'Simplicity #5443 (XL-XXXL)', label: 'Simplicity #5443 (XL-XXXL)' },
+  { value: 'Butterick #4946 (XS, S, M)', label: 'Butterick #4946 (XS, S, M)' },
+  { value: 'Butterick #4946 (L, XL)', label: 'Butterick #4946 (L, XL)' },
+  { value: 'New Look #6876', label: 'New Look #6876' },
+  {
+    value: 'Printing',
+    label: 'No, but I will print the Busty Pear PDF pattern',
+  },
+  {
+    value: 'Deliver',
+    label: 'No. Please deliver a paper pattern when they’re available',
+  },
+  { value: 'Other', label: 'Other (Specify Below)' },
 ];
 
 const AngelFormSection = () => {
@@ -51,6 +93,11 @@ const AngelFormSection = () => {
               suburb: '',
               state: '',
               post_code: '',
+              proficiency: '',
+              fabric: '',
+              pattern: '',
+              velocity: '',
+              started: '',
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
@@ -95,6 +142,15 @@ const AngelFormSection = () => {
                 .required('Post Code required')
                 .max(4, 'Post code must be 4 characters')
                 .min(4, 'Post code must be 4 characters'),
+              proficiency: Yup.string().required('Sewing proficiency required'),
+              fabric: Yup.string().required('Fabric situation required'),
+              pattern: Yup.string().required('Pattern required'),
+              velocity: Yup.number()
+                .required('Number of scrubs you can make required')
+                .integer('Please enter a whole number')
+                .max(10, 'Please enter a number between 1 and 10')
+                .min(0, 'Please enter a number between 1 and 10'),
+              started: Yup.string().required('Please select Yes or No'),
             })}
           >
             {props => {
@@ -113,6 +169,9 @@ const AngelFormSection = () => {
                 handleReset,
                 submitCount,
               } = props;
+
+              console.log(values);
+
               return (
                 <form onSubmit={handleSubmit} method="post">
                   <Input
@@ -246,6 +305,88 @@ const AngelFormSection = () => {
                     className="error-message"
                     component="div"
                   />
+                  <br />
+                  <label>Level of Sewing Experience</label>
+                  <RadioGroup
+                    onUpdate={val => setFieldValue('proficiency', val)}
+                    items={skillOptions}
+                  />
+                  <ErrorMessage
+                    name="proficiency"
+                    className="error-message"
+                    component="div"
+                  />
+
+                  <Select
+                    options={fabricOptions}
+                    name="fabric"
+                    labelText="Do you have fabric?"
+                    onChange={option => setFieldValue('fabric', option.value)}
+                    onBlur={setFieldTouched}
+                  />
+                  <ErrorMessage
+                    name="fabric"
+                    className="error-message"
+                    component="div"
+                  />
+
+                  <Select
+                    options={patternOptions}
+                    name="pattern"
+                    labelText="Do you have a pattern? Please specify which one"
+                    onChange={option => setFieldValue('pattern', option.value)}
+                    onBlur={setFieldTouched}
+                  />
+                  <ErrorMessage
+                    name="pattern"
+                    className="error-message"
+                    component="div"
+                  />
+                  {values.pattern === 'Other' && (
+                    <div>
+                      <Input
+                        inputType="text"
+                        label="Pattern Name"
+                        name="pattern_other"
+                        onChange={handleChange}
+                      ></Input>
+                      <ErrorMessage
+                        name="pattern_other"
+                        className="error-message"
+                        component="div"
+                      />
+                    </div>
+                  )}
+
+                  <Input
+                    inputType="number"
+                    label="Number of scrubs you can make per week"
+                    name="velocity"
+                    onChange={handleChange}
+                    className={
+                      errors.velocity && touched.velocity
+                        ? 'text-input error'
+                        : 'text-input'
+                    }
+                  ></Input>
+                  <ErrorMessage
+                    name="velocity"
+                    className="error-message"
+                    component="div"
+                  />
+                  <Select
+                    options={yesNoOptions}
+                    name="started"
+                    labelText="Have you already started or completed making scrubs?"
+                    onChange={option => setFieldValue('started', option.value)}
+                    onBlur={setFieldTouched}
+                  />
+                  <ErrorMessage
+                    name="started"
+                    className="error-message"
+                    component="div"
+                  />
+
                   <br />
                   <Button
                     disabled={isSubmitting}
