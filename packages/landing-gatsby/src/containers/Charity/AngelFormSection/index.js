@@ -100,29 +100,28 @@ const AngelFormSection = () => {
               started: '',
             }}
             onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                const json = JSON.stringify(values, null, 2);
-                fetch(process.env.API_URL + '/API/SignUp/AngelSignUp', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                  },
-                  body: json,
+              const json = JSON.stringify(values, null, 2);
+              fetch(process.env.API_URL + '/API/SignUp/AngelSignUp', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: json,
+              })
+                .then(response => response.json())
+                .then(data => {
+                  console.log('Success:', data);
+                  if (data.success) {
+                    navigate('/angel-success');
+                  } else {
+                    setApiError(data);
+                    setSubmitting(false);
+                  }
                 })
-                  .then(response => response.json())
-                  .then(data => {
-                    console.log('Success:', data);
-                    if (data.success) {
-                      navigate('/angel-success');
-                    } else {
-                      setApiError(data);
-                    }
-                  })
-                  .catch(error => {
-                    setApiError(error);
-                  });
-                setSubmitting(false);
-              }, 400);
+                .catch(error => {
+                  setApiError(error);
+                  setSubmitting(false);
+                });
             }}
             validationSchema={Yup.object({
               first_name: Yup.string()
@@ -392,7 +391,10 @@ const AngelFormSection = () => {
                     disabled={isSubmitting}
                     colors="primaryWithBg"
                     type="submit"
-                    title="Submit"
+                    title={
+                      (!isSubmitting && 'Submit') ||
+                      (isSubmitting && 'Submitting...')
+                    }
                   />
                   {!isValid && submitCount > 0 && (
                     <div className="error-message">
