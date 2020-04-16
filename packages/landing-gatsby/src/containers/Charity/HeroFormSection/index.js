@@ -7,7 +7,7 @@ import * as Yup from 'yup';
 import Select from 'common/src/components/Select';
 import Input from 'common/src/components/Input';
 import Button from 'common/src/components/Button';
-import { Link, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 import SectionWrapper, {
   SectionHeader,
   ContentArea,
@@ -152,15 +152,12 @@ const HeroFormSection = () => {
                 touched,
                 isValid,
                 errors,
-                dirty,
                 isSubmitting,
                 handleChange,
-                handleBlur,
                 handleSubmit,
                 setFieldValue,
                 setFieldTouched,
                 submitCount,
-                handleReset,
               } = props;
               return (
                 <form onSubmit={handleSubmit} method="post" margin="auto">

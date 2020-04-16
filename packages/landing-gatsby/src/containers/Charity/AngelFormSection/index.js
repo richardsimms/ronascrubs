@@ -160,15 +160,12 @@ const AngelFormSection = () => {
                 values,
                 touched,
                 errors,
-                dirty,
                 isSubmitting,
                 isValid,
                 handleChange,
-                handleBlur,
                 handleSubmit,
                 setFieldValue,
                 setFieldTouched,
-                handleReset,
                 submitCount,
               } = props;
 
