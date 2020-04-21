@@ -20,7 +20,7 @@ const FundraiserSection = () => {
       <Container>
         <SectionHeader>
           <Heading content="About Rona Scrubs" />
-          <Text content="Our mission is to ease some of the burdens for healthcare workers by providing as many as we can with scrubs made by our fabulous sewing volunteers so that they can focus on where they add the most value." />
+          <Text content="Our mission is to ease some of the burdens for healthcare workersand enabling them to focus on where they add the most value, by providing as many as we can with scrubs made by our fabulous sewing volunteers so that they can focus on where they add the most value." />
         </SectionHeader>
         <ContentArea>
           <ImageWrapper>
@@ -49,7 +49,7 @@ const FundraiserSection = () => {
             <Heading as="h3" content="Your help really counts" />
             <Text
               content="
-              With the help of some amazing businesses we are delivering kits (fabric, thread and a pattern) to our sewing volunteers so that they can make scrubs in the comfort of their own homes. We will then arrange to collect and distribute those scrubs to healthcare workers who need them. Our approach is focused on getting as many scrubs made as quickly as possible, whilst ensuring everyone involved adheres to the current Government protocols aimed at reducing the spread of COVID-19. If you’d like to help, you can register to volunteer to sew scrubs (or let us know how else you can help). Otherwise you can also donate. All donations go directed back into funding our mission to support healthcare workers.
+              With the help of some amazing volunteers we are delivering fabric and a paper pattern to our sewing volunteers so that they can make scrubs in the comfort of their own homes. We will then arrange to collect and distribute those scrubs to healthcare workers who need them. Our approach is focused on getting as many scrubs made as quickly as possible, whilst ensuring everyone involved adheres to the current Government protocols aimed at reducing the spread of COVID-19. If you would like to be a part of this initiative, you can register to volunteer to sew scrubs (or let us know how else you can help). Otherwise you may like to make a donation to support us . All donations go directly back into funding our mission to support healthcare workers. 
             "
             />
           </TextWrapper>

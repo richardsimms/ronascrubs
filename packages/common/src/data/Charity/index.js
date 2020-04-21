@@ -306,7 +306,7 @@ export const humanityData = {
   lists: [
     {
       id: 1,
-      text: 'Let us know how many sets of scrubs you need (we recommend 1-2 sets per Hero, so we can spread the love to as many people as possible)',
+      text: 'Let us know how many sets of scrubs you need (we have limited orders to 1-2 sets per Hero so we can spread the love to as many people as possible)',
     },
     {
       id: 2,

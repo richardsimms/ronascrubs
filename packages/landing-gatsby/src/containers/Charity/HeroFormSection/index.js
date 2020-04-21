@@ -68,8 +68,8 @@ const HeroFormSection = () => {
           <Heading content="Scrubs order form" />
         </SectionHeader>
         <ContentArea>
-          <Text content="Please complete the below details so that we can organise a set of scrubs to be made for you." />
-          <Text content="We are still in the very early stages at Rona Scrubs and request that you keep your order to no more than 2 sets of scrubs per person. Please also note that at this stage we are rolling out Rona Scrubs in our home city of Melbourne initially. If you are outside of Melbourne, you can still order and we will reach out to you directly to talk about how we can help get scrubs to you." />
+          <Text content="Please complete the details below so that we can organise 1-2 sets of scrubs to be made for you." />
+          <Text content="Please note that  we are continuing to roll out Rona Scrubs in our home city of Melbourne, with a view to extending nationally before the end of April as we finalise a partnership to facilitate this process. If you are outside of Melbourne, you can still order and we will ensure the scrubs get to you as soon as possible." />
         </ContentArea>
         <ContentArea>
           <Formik
@@ -339,11 +339,11 @@ const HeroFormSection = () => {
                     className="error-message"
                     component="div"
                   />
-                  <Text content="Sizes are unisex. Ladies we recommend 2 sizes smaller than your normal size." />
+                  <Text content="Sizes are unisex." />
                   <a href={chartSize} target="_blank" rel="noopener noreferrer">
                     See the size guide to be certain you order the right size.
                   </a>
-                  <Text content="Please note we are unable to accommodate specific colour or pant length requests. For more information please see our FAQs" />
+                  <Text content="Please note we are unable to accommodate specific colour, pattern or pant length requests. The inner pant length is standardised at 80cm (from groin to foot). For more information please see our FAQs" />
                   <Select
                     options={sizeOptions}
                     name="top_size"

@@ -77,8 +77,8 @@ const AngelFormSection = () => {
           <Heading content="Volunteer to sew scrubs" />
         </SectionHeader>
         <ContentArea>
-          <Text content="Please complete the below details so that we can get you set up to start making scrubs for our amazing healthcare heroes." />
-          <Text content="We are still in the very early stages at Rona Scrubs and are currently primarily based in our home city of Melbourne at this stage. If you are outside of Melbourne, you can still volunteer and we will reach out to you directly to talk about how we can help get you onboard." />
+          <Text content="Please complete the details below so that we can get you set up to start making scrubs for our amazing healthcare heroes." />
+          <Text content="Rona Scrubs has been rolled out in Melbourne where our founding team are located, but we are finalising a partnership that will enable us to extend nationally. If you are outside of Melbourne, you can still volunteer and we will ensure to bring you on board as soon as possible." />
         </ContentArea>
         <ContentArea>
           <Formik
