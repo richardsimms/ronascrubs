@@ -12,7 +12,7 @@ import SectionWrapper, {
   SectionHeader,
   ContentArea,
 } from './heroFormSection.style';
-import chartSize from 'common/src/assets/image/charity/sizechart.jpeg';
+import chartSize from 'common/src/assets/image/charity/Heroes_size_chart.jpg';
 
 const roleOptions = [
   { value: 'Doctor', label: 'Doctor' },
