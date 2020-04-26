@@ -389,17 +389,16 @@ const HeroFormSection = () => {
                     component="div"
                   /> */}
 
-                  <Input
-                    inputType="number"
+                  <Select
+                    options={[
+                      { value: 1, label: 1 },
+                      { value: 2, label: 2 },
+                    ]}
                     name="quantity"
-                    label="Quantity"
-                    onChange={handleChange}
-                    className={
-                      errors.quantity && touched.quantity
-                        ? 'text-input error'
-                        : 'text-input'
-                    }
-                  ></Input>
+                    labelText="Quantity"
+                    onChange={option => setFieldValue('quantity', option.value)}
+                    onBlur={setFieldTouched}
+                  />
                   <ErrorMessage
                     name="quantity"
                     className="error-message"
