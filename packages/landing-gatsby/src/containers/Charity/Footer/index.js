@@ -51,7 +51,10 @@ const Footer = ({ row, col, colOne, colTwo }) => {
             <Link to="/privacy">
               <Text className="text" content="Privacy Policy" />
             </Link>
-            
+            <a href="https://admin.ronascrubs.com">
+              <Text className="text" content="Admin" />
+            </a>
+
             <a
               aria-label="go to mail"
               href="mailto:info@ronascrubs.com"
