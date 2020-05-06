@@ -11,7 +11,7 @@ import SectionWrapper, {
   List,
   Item,
 } from './FAQSection.style';
-import chartSize from 'common/src/assets/image/charity/sizechart.jpeg';
+import chartSize from 'common/src/assets/image/charity/Heroes_size_chart.jpg';
 
 const FundraiserSection = () => {
   return (
