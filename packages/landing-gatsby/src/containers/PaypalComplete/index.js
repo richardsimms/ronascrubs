@@ -23,7 +23,7 @@ const ErrorSec = ({ imageWrapper, title, text, homeButton }) => {
         <Heading {...title} content="Thank you for your donation." />
         <Text
           {...text}
-          content="Your generosity will go a long way to supporting our mission to produce scrubs for our front line Your help really countsoes during the COVID-19 crisis."
+          content="Your generosity will go a long way to supporting our mission to produce scrubs for our front line Your help really counts during the COVID-19 crisis."
         />
         <Text
           {...text}
