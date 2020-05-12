@@ -392,7 +392,6 @@ const HeroFormSection = () => {
                   <Select
                     options={[
                       { value: 1, label: 1 },
-                      { value: 2, label: 2 },
                     ]}
                     name="quantity"
                     labelText="Quantity"
