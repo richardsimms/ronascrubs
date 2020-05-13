@@ -68,7 +68,7 @@ const HeroFormSection = () => {
           <Heading content="Scrubs order form" />
         </SectionHeader>
         <ContentArea>
-          <Text content="Please complete the details below so that we can organise 1-2 sets of scrubs to be made for you." />
+          <Text content="Please complete the details below so that we can organise a set of scrubs to be made for you." />
           <Text content="Please note that  we are continuing to roll out Rona Scrubs in our home city of Melbourne, with a view to extending nationally before the end of April as we finalise a partnership to facilitate this process. If you are outside of Melbourne, you can still order and we will ensure the scrubs get to you as soon as possible." />
         </ContentArea>
         <ContentArea>
