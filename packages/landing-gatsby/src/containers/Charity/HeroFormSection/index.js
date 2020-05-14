@@ -86,10 +86,9 @@ const HeroFormSection = () => {
               suburb: '',
               state: '',
               post_code: '',
-              top_size: '',
-              bottom_size: '',
+              scrub_size: '',
               leg_length: 80,
-              quantity: '',
+              quantity: 1,
             }}
             onSubmit={(values, { setSubmitting }) => {
               const json = JSON.stringify(values, null, 2);
@@ -137,8 +136,7 @@ const HeroFormSection = () => {
                 .required('Post Code required')
                 .max(4, 'Post code must be 4 characters')
                 .min(4, 'Post code must be 4 characters'),
-              top_size: Yup.string().required('Top size required'),
-              bottom_size: Yup.string().required('Bottom size required'),
+              scrub_size: Yup.string().required('Scrub size required'),
               leg_length: Yup.number()
                 .required('Inner leg length required')
                 .integer('Inner leg length must be a whole number'),
@@ -346,18 +344,20 @@ const HeroFormSection = () => {
                   <Text content="Please note we are unable to accommodate specific colour, pattern or pant length requests. The inner pant length is standardised at 80cm (from groin to foot). For more information please see our FAQs" />
                   <Select
                     options={sizeOptions}
-                    name="top_size"
-                    labelText="Scrub top size"
-                    onChange={option => setFieldValue('top_size', option.value)}
+                    name="scrub_size"
+                    labelText="Scrub size"
+                    onChange={option =>
+                      setFieldValue('scrub_size', option.value)
+                    }
                     onBlur={setFieldTouched}
                   />
                   <ErrorMessage
-                    name="top_size"
+                    name="scrub_size"
                     className="error-message"
                     component="div"
                   />
 
-                  <Select
+                  {/* <Select
                     options={sizeOptionsBottom}
                     name="bottom_size"
                     labelText="Scrub bottom size"
@@ -370,7 +370,7 @@ const HeroFormSection = () => {
                     name="bottom_size"
                     className="error-message"
                     component="div"
-                  />
+                  /> */}
 
                   {/* <Input
                     inputType="number"
@@ -389,7 +389,7 @@ const HeroFormSection = () => {
                     component="div"
                   /> */}
 
-                  <Select
+                  {/* <Select
                     options={[
                       { value: 1, label: 1 },
                     ]}
@@ -402,7 +402,7 @@ const HeroFormSection = () => {
                     name="quantity"
                     className="error-message"
                     component="div"
-                  />
+                  /> */}
                   <br />
                   <Button
                     disabled={isSubmitting}
