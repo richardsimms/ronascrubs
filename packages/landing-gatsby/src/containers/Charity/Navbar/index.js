@@ -15,17 +15,7 @@ const Navbar = () => {
         <Link className="logo" to="/">
           <Image src={logoImage} alt="Rona Scrubs" />
         </Link>
-        <MenuWrapper>
-        <AnchorLink className="" to="/#ourMission" title="Get Scrubs" >
-            Get Scrubs
-          </AnchorLink>
-        <AnchorLink className="" to="/#ourApproach"  title="Sew Scrubs" >
-          Sew Scrubs
-          </AnchorLink>
-          
-          <Link  to="/about"  title="About Rona Scrubs">
-            About
-          </Link>
+        <MenuWrapper>          
           <Link  to="/faq"  title="FAQs">
             FAQs
           </Link>

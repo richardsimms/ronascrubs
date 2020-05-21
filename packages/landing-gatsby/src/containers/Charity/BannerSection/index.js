@@ -43,7 +43,7 @@ const BannerSection = () => {
       <ContentWrapper>
         <TextArea>
           <HighlightedText className="highlighted_text">
-            <strong>NEWS</strong> Pilot launched 1 April 
+            <strong>NEWS</strong> Happy National Volunteer Week
           </HighlightedText>
           <Heading content="Scrubs made with TLC" />
           <Heading
@@ -51,10 +51,6 @@ const BannerSection = () => {
             content="Rona Scrubs is a not-for-profit charitable organisation, creating scrubs for healthcare heroes in response to COVID-19"
           />
           <Text content="Our mission is to provide a new way of giving back to our healthcare heroes, and the wider community, during the COVID-19 pandemic." />
-          <Link className="learn__more-btn" to="/signup_hero">
-            <span className="hyphen" />
-            <span className="btn_text">Order scrubs </span>
-          </Link>
         </TextArea>
         <ImageArea>
           <GlideCarousel

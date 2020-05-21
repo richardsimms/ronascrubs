@@ -4,4 +4,8 @@ disallow: /hereo-success
 disallow: /angel-success
 noindex: /hereo-success
 noindex: /angel-success
+disallow: /hereo
+disallow: /angel
+noindex: /hereo
+noindex: /angel
 

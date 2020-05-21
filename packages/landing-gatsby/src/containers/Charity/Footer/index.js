@@ -42,9 +42,6 @@ const Footer = ({ row, col, colOne, colTwo }) => {
             <Link to="/charity" className="logo">
               <Image src={LogoImage} alt="Charity" />
             </Link>
-            <Link to="/about">
-              <Text className="text" content="About" />
-            </Link>
             <Link to="/faq">
               <Text className="text" content="FAQs" />
             </Link>

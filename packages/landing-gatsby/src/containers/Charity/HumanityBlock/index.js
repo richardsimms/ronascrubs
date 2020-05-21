@@ -55,10 +55,6 @@ const HumanityBlock = ({ row, col }) => {
                 ))}
               </List>
 
-              <Link className="learn__more-btn" to="/signup_hero">
-                <span className="hyphen" />
-                <span className="btn_text">Order scrubs</span>
-              </Link>
             </ContentWrapper>
           </Box>
         </Box>

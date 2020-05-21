@@ -73,7 +73,6 @@ const DonateSection = ({ row, col }) => {
                 <Item >Conversations about how you might be able to partner with us</Item>
                 <Item >Offers to volunteer other helpful services and skills that aren’t sewing</Item>
               </List>
-              <p>For non-monetary offers of support please email us at <a href="mailto:info@ronascrubs.com" >info@ronascrubs.com</a></p>
 
             </ContentArea>
           </Box>
