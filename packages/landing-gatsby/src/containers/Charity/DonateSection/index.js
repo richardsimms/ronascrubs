@@ -66,13 +66,8 @@ const DonateSection = ({ row, col }) => {
               <Heading>
               HELP US SUPPORT OUR HEALTHCARE HEROES
               </Heading>
-              <Text content="To help us get scrubs to as many of our healthcare heroes as possible, we would be very grateful for any support you can offer." />
-              <Text fontWeight="800" content="We welcome:" />
-              <List>
-                <Item >Donations</Item>
-                <Item >Conversations about how you might be able to partner with us</Item>
-                <Item >Offers to volunteer other helpful services and skills that aren’t sewing</Item>
-              </List>
+              <Text content="To help us get scrubs to as many of our healthcare heroes as possible, we would be very grateful for any support you can offer. Your donations are used to help us support our angels in making scrubs and then getting those scrubs to healthcare heroes." />
+
 
             </ContentArea>
           </Box>

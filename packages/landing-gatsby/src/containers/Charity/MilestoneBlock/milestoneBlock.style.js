@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
-import bgImage from 'common/src/assets/image/charity/milestone-bg.png';
+import bgImage from 'common/src/assets/image/charity/packets.jpg';
 
 const BlockWrapper = styled.div`
   width: 100%;
@@ -105,7 +105,7 @@ export const CounterWrapper = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 920px;
-  width: 100%;
+  width: 70%;
   margin: 0 auto 75px;
   @media only screen and (max-width: 1440px) {
     margin: 0 auto 70px;
@@ -115,12 +115,35 @@ export const CounterWrapper = styled.div`
   }
   @media only screen and (max-width: 991px) {
     margin: 0 auto 40px;
+    width: 100%;
   }
   @media only screen and (max-width: 480px) {
     margin: 0 auto 15px;
+    width: 100%;
   }
 `;
-
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 920px;
+  color: #616970;
+  width: 70%;
+  margin: 0 auto 75px;
+  @media only screen and (max-width: 1440px) {
+    margin: 0 auto 70px;
+  }
+  @media only screen and (max-width: 1360px) {
+    margin: 0 auto 50px;
+  }
+  @media only screen and (max-width: 991px) {
+    margin: 0 auto 40px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 480px) {
+    margin: 0 auto 15px;
+    width: 100%;
+  }
+`;
 export const CounterItem = styled.div`
   text-align: center;
   @media only screen and (max-width: 480px) {
@@ -149,7 +172,7 @@ export const CounterItem = styled.div`
 
   p {
     font-size: 20px;
-    text-transform: capitalize;
+    
     margin-bottom: 0;
     @media only screen and (max-width: 1440px) {
       font-size: 18px;

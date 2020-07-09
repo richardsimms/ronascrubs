@@ -9,7 +9,7 @@ import Navbar from '../containers/Charity/Navbar';
 import BannerSection from '../containers/Charity/BannerSection';
 import FundraiserSection from '../containers/Charity/FundraiserSection';
 // import HumanityBlock from '../containers/Charity/HumanityBlock';
-// import PromotionBlock from '../containers/Charity/PromotionBlock';
+import MilestoneBlock from '../containers/Charity/MilestoneBlock';
 import ClientBlock from '../containers/Charity/ClientBlock';
 
 import DonateSection from '../containers/Charity/DonateSection';
@@ -41,6 +41,7 @@ export default () => {
             { /* <HumanityBlock />
             <PromotionBlock />
               */}
+              <MilestoneBlock />
             <DonateSection />
             <ClientBlock />
 

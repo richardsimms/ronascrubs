@@ -21,7 +21,6 @@ const FundraiserSection = () => {
       <Container>
         <SectionHeader>
           <Heading content="About Rona Scrubs" />
-          <Text content="Our mission is to ease some of the burdens for healthcare workersand enabling them to focus on where they add the most value, by providing as many as we can with scrubs made by our fabulous sewing volunteers so that they can focus on where they add the most value." />
         </SectionHeader>
         <ContentArea>
           <ImageWrapper>
@@ -34,7 +33,7 @@ const FundraiserSection = () => {
             <Heading as="h3" content="Why are we making scrubs?" />
             <Text
               content="
-              While scrubs alone will not provide sufficient protection for our healthcare workers against COVID-19, donning a uniform upon arrival at work does reduce the risk of outside contamination of that workplace. Conversely, removing a uniform (or scrubs) before leaving the workplace minimises the risk of potential contamination into the wider community and the homes of healthcare workers.
+              Our mission is to help ease some of the burdens and worries healthcare workers are facing during COVID-19 so that they can focus on where they add the most value. While scrubs alone will not provide sufficient protection for our healthcare workers against COVID-19, donning a uniform upon arrival at work does reduce the risk of outside contamination of that workplace. Conversely, removing a uniform (or scrubs) before leaving the workplace minimises the risk of potential contamination into the wider community and the homes of healthcare workers.
             "
             />
             
@@ -59,27 +58,7 @@ const FundraiserSection = () => {
           </ImageWrapper>
         </ContentArea>
       </Container>
-      <Container>
-        <ContentArea>
-          <ImageWrapper>
-            <Image src={progressImage} alt="Anni sewing" />
-          </ImageWrapper>
-          <TextWrapper>
-            <TextAndLink>
-              <Heading as="h4" content="OUR PROGRESS" />
-            </TextAndLink>
-            <Heading as="h3" content="We have over 7,000 orders and 3,000 volunteers" />
-            <Text
-              content="
-              Since starting on 1 April 2020 we have had a huge response from heroes needing help with scrubs and amazing angels keen to help. It is a truly humbling experience.
-              That said, we have decided that we need to stop taking any future orders and additional volunteers so that we can focus on completing the orders we have already received and supporting the angels that are working so hard. We are working very hard to try to source more fabric for angels and until we are able to source sufficient fabric to support our current angels, we do not believe it is fair to take on additional angels.
-              We apologise to healthcare heroes that are yet to place an order and to any sewing volunteers that are looking to sign up to help us. From the bottom of our heart, thank you for your generosity, understanding and support during this challenging time.
-            "
-            />
-            
-          </TextWrapper>
-        </ContentArea>
-      </Container>
+
     </SectionWrapper>
   );
 };

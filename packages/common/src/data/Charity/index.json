@@ -183,29 +183,24 @@
     ]
   },
   "milestoneData": {
-    "title": "OUR FIRST MILESTONE",
-    "amount": "$4M",
-    "text": "RAISED TO DATE",
+    "title": "OUR PROGRESS",
+    "amount": "4,500",
+    "text": "COMPLETED ORDERS",
     "counterItems": [
       {
         "id": 1,
-        "amount": "154",
-        "title": "Successful Project"
+        "amount": "6,275",
+        "title": "Total orders"
       },
       {
         "id": 2,
-        "amount": "1534",
-        "title": "People Impacted"
+        "amount": "3,069",
+        "title": "Sewing angels"
       },
       {
         "id": 3,
-        "amount": "71",
-        "title": "Supported Country"
-      },
-      {
-        "id": 4,
-        "amount": "15k",
-        "title": "Money Donated"
+        "amount": "256",
+        "title": "Supported areas"
       }
     ]
   },
@@ -265,20 +260,121 @@
   "posts": [
     {
       "id": 1,
-      "title": "Uganda Embraces South Sudanese Refugees, For Now",
-      "excerpt": "72 million children around the world are not enrolled in school. Concern Worldwide focuses on providing basic education to those…",
-      "thumbUrl": "../../assets/image/charity/blog/thumb-1.png",
+      "title": "Annabelle Parsons",
+      "excerpt": "Founder",
+      "thumbUrl": "../../assets/image/charity/blog/annabelle.jpeg",
+      "btnText": "Learn More ",
+      "btnUrl": "https://www.linkedin.com/in/annabelleparsons/"
+    },
+    {
+      "id": 2,
+      "title": "Kate Coleridge",
+      "excerpt": "Marketing lead",
+      "thumbUrl": "../../assets/image/charity/blog/kate.jpeg",
+      "btnText": "Learn More ",
+      "btnUrl": "https://www.linkedin.com/in/kate-coleridge-marketing-hadleighandco/"
+    },
+    {
+      "id": 3,
+      "title": "Richard Simms",
+      "excerpt": "Customer experience lead",
+      "thumbUrl": "../../assets/image/charity/blog/richard.jpeg",
       "btnText": "Learn More ",
       "btnUrl": "#1"
     },
     {
-      "id": 2,
-      "title": "BRITs Week 2019 together with O2 is here",
-      "excerpt": "72 million children around the world are not enrolled in school. Concern Worldwide focuses on providing basic education to those…",
-      "thumbUrl": "../../assets/image/charity/blog/thumb-2.png",
+      "id": 4,
+      "title": "Jason Tsorlinis",
+      "excerpt": "Engineer lead",
+      "thumbUrl": "../../assets/image/charity/blog/jase.jpeg",
       "btnText": "Learn More ",
-      "btnUrl": "#1"
+      "btnUrl": "https://www.linkedin.com/in/jason-tsorlinis-7963b3155/"
     }
+  ],
+  "distributors": [
+    "Deb Hart", 
+"Anne Harkin", 
+"Louise Sparrow", 
+"Patricia Jonas", 
+"Jennifer Lannoy", 
+"Maria Tessari", 
+"Lynette Fisher", 
+"Sharon Hogan", 
+"Jennifer Walker", 
+"Sharyn Dingeldei",
+"Glenda Novotny",
+"Rachel Mckenny",
+"Margaret Smith",
+"Dianne Bergen",
+"Tania Rugiero",
+"Cheryl Weaver",
+"Janine Polhill",
+"Judy O’Rourke",
+"Wendy Staniforth",
+"Ann Marie Lee",
+"Ruth Morton",
+"Wanda Vaughan",
+"Jenni Walker",
+"Sue Smith",
+"Michelle James",
+"Helen Maxwell",
+"Samantha Rowe",
+"Anne-Maree Clarke",
+"Anne Begg",
+"Merzuka Bahtigur",
+"Marg Watson",
+"Jacqueline Avetisoff",
+"Caroline Ellis",
+"Lyn Beasy",
+"Maria Michael",
+"Anne Strong",
+"Anne Firmin",
+"Tracey Tranter",
+"Dee Zammit",
+"Marion Wagner",
+"Carolyn Akhurst",
+"Chris Olding",
+"Jenni Evans",
+"Sarah Lawrence",
+"Kerryn Pryor",
+"Jacinta Gwynne",
+"Chayanut Osornprasoph",
+"Linda Setter",
+"Tennille Hall",
+"Julie Pearce",
+"Nicola Taylor",
+"Kate Faulmann",
+"Olivia Grimwade",
+"Nick Parsons",
+"Tessa Sarich",
+"Trish Carlin",
+"Alistair McDonald",
+"Kevin Taylor",
+"Janene Rodda",
+"Claire Helme",
+"Mary Sabotkoski",
+"Janita Westbury",
+"Chris Ingram",
+"Amanda Gibson",
+"Kate Bishop",
+"Debra Traill",
+"Leah Phillips",
+"Melissa Baker",
+"Debbie Cooper",
+"Sharon Umbers",
+"Anna Close",
+"Sarah Peake",
+"Julie Martin",
+"Jennifer Keerie",
+"Jacqui Gibson",
+"Hannah Fagenblat",
+"Narelle Hanly",
+"Jacinta Lynch",
+"Gillian Wallace",
+"Bron Simmonds",
+"Sharon Beltram",
+"Lisa Giufre",
+"Sandra Dharmadi"
   ],
   "clients": [
     {
