@@ -43,7 +43,7 @@ const BannerSection = () => {
       <ContentWrapper>
         <TextArea>
           <HighlightedText className="highlighted_text">
-            <strong>8 July</strong> 82% of Scrubs made & delivered 
+            <strong>16 July</strong> 85% of Scrubs made & delivered 
           </HighlightedText>
           <Heading content="We've stopped taking orders" />
           <Heading
