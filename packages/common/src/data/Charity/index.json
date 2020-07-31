@@ -183,13 +183,13 @@
     ]
   },
   "milestoneData": {
-    "title": "OUR PROGRESS",
-    "amount": "5,067",
+    "title": "",
+    "amount": "6,531",
     "text": "COMPLETED ORDERS",
     "counterItems": [
       {
         "id": 1,
-        "amount": "6,275",
+        "amount": "6,531",
         "title": "Total orders"
       },
       {

@@ -12,7 +12,6 @@ import FundraiserSection from '../containers/Charity/FundraiserSection';
 import MilestoneBlock from '../containers/Charity/MilestoneBlock';
 import ClientBlock from '../containers/Charity/ClientBlock';
 
-import DonateSection from '../containers/Charity/DonateSection';
 
 import Footer from '../containers/Charity/Footer';
 import {
@@ -42,7 +41,6 @@ export default () => {
             <PromotionBlock />
               */}
               <MilestoneBlock />
-            <DonateSection />
             <ClientBlock />
 
           </ContentWrapper>
